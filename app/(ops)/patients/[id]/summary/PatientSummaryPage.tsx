@@ -198,9 +198,9 @@ export function PatientSummaryPage() {
       <Section title="Treatment Planning Readiness" icon={Package}>
         <div className="flex flex-wrap gap-3">
           <Badge done={!!txPlan} label="Treatment Plan Created" />
-          <Badge done={txPlan?.isApproved ?? false} label="Plan Approved" />
-          <Badge done={txPlan?.medicineListForwarded ?? false} label="Medicine List Forwarded" />
-          <Badge done={txPlan?.therapyScheduleDistributed ?? false} label="Therapy Schedule Distributed" />
+          <Badge done={txPlan?.status === "approved"} label="Plan Approved" />
+          <Badge done={txPlan?.status === "medicines_dispatched" || txPlan?.status === "approved"} label="Medicine List Forwarded" />
+          <Badge done={txPlan?.status === "schedule_distributed" || txPlan?.status === "medicines_dispatched" || txPlan?.status === "approved"} label="Therapy Schedule Distributed" />
           <Badge done={!!pkC} label="PK Consultation" />
           <Badge done={pkC?.status === "completed"} label="PK Consultation Complete" />
         </div>
