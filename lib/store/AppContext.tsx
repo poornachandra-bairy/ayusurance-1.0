@@ -1571,11 +1571,10 @@ function appReducer(state: AppState, action: AppAction): AppState {
       const { patientId, note, author } = action.payload;
       const newLogId = `AL-AUDIT-${Date.now()}`;
       const auditEntry: import("@/lib/types/workflow").ActionLogEntry = {
-        id: newLogId, patientId, timestamp: ts, type: "note",
-        stageId: undefined as any,
-        actor: author ?? "Ops Team",
-        summary: note,
-        isAudit: true as any,
+        id: newLogId, patientId, timestamp: ts, noteType: "update",
+        workflowStageId: undefined,
+        role: author ?? "Ops Team",
+        message: note,
       };
       return {
         ...state,
