@@ -747,7 +747,7 @@ function appReducer(state: AppState, action: AppAction): AppState {
         state: wl.data.placeOfResidence.split(",")[1]?.trim() || "",
         country: wl.data.placeOfResidence.split(",")[2]?.trim() || "",
         pracharakaId: wl.pracharakaId,
-        currentStage: "astrochart_eligibility" as import("@/lib/types/workflow").WorkflowStageId,
+        currentStage: "astro-eligibility",
         createdAt: ts,
         updatedAt: ts,
         chiefComplaint: wl.data.healthConcerns,
