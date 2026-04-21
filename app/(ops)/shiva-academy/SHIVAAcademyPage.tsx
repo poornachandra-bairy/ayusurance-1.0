@@ -96,7 +96,7 @@ export function SHIVAAcademyPage() {
   // Orientation tracking: how many patients have had PK orientation videos sent
   const orientationSent  = pkConsultationV2Records.filter((c) => c.orientationVideosSent).length;
   const orientationDone  = pkConsultationV2Records.filter((c) => c.orientationVideosDone).length;
-  const pracharakaTrained = pracharakas.filter((p) => p.certificationStatus === "certified").length;
+  const pracharakaTrained = pracharakas.filter((p) => p.status === "active").length;
 
   return (
     <div className="space-y-6">
