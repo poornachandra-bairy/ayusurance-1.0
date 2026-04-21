@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { useAppStore } from "@/lib/store/useAppStore";
 import { StageStatusBadge } from "./StageStatusBadge";
-import type { WorkflowStageId, StageStatus, PatientWorkflowRecord } from "@/lib/types/workflow";
+import type { WorkflowStageId, StageStatus, PatientWorkflowRecord, StageRecord } from "@/lib/types/workflow";
 import { WORKFLOW_STAGE_IDS } from "@/lib/types/workflow";
 import workflowStagesV2 from "@/data/workflow-stages-v2.json";
 import { formatDate, formatDateTime } from "@/lib/utils/date";
@@ -56,7 +56,7 @@ export function WorkflowTracker({ patientId, compact = false }: WorkflowTrackerP
     setStatusEditing(null);
   }
 
-  function daysInStage(rec: typeof record.stages[WorkflowStageId]): string {
+  function daysInStage(rec: StageRecord): string {
     if (!rec.startedAt) return "—";
     if (rec.completedAt) {
       const diff = new Date(rec.completedAt).getTime() - new Date(rec.startedAt).getTime();
