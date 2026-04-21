@@ -763,12 +763,12 @@ function appReducer(state: AppState, action: AppAction): AppState {
           ...Object.fromEntries(
             WORKFLOW_STAGE_IDS.map((id) => [
               id,
-              { stageId: id, status: "not_started" },
+              { stageId: id, status: "not_started" as StageStatus },
             ])
           ),
-          patient_wish_list: { stageId: "patient_wish_list", status: "completed", startedAt: wl.createdAt, completedAt: ts },
-          astrochart_eligibility: { stageId: "astrochart_eligibility", status: "in_progress", startedAt: ts },
-        } as Record<import("@/lib/types/workflow").WorkflowStageId, import("@/lib/types/workflow").StageRecord>,
+          patient_wish_list: { stageId: "patient_wish_list", status: "completed" as StageStatus, startedAt: wl.createdAt, completedAt: ts },
+          astrochart_eligibility: { stageId: "astrochart_eligibility", status: "in_progress" as StageStatus, startedAt: ts },
+        } as Record<WorkflowStageId, StageRecord>,
         createdAt: ts,
         updatedAt: ts,
       };
@@ -857,7 +857,7 @@ function appReducer(state: AppState, action: AppAction): AppState {
           ...wf.stages,
           astrochart_eligibility: {
             ...currentStage,
-            status: "completed",
+            status: "completed" as StageStatus,
             completedAt: ts,
             notes: `Decision: ${decision}`,
           },
@@ -865,7 +865,7 @@ function appReducer(state: AppState, action: AppAction): AppState {
 
         if (decision === "eligible") {
           newWf.currentWorkflowStageId = "screening_consultation";
-          newWf.stages["screening_consultation"] = { ...wf.stages["screening_consultation"], status: "in_progress", startedAt: ts };
+          newWf.stages["screening_consultation"] = { ...wf.stages["screening_consultation"], status: "in_progress" as StageStatus, startedAt: ts };
         } else if (decision === "not_immediately_eligible") {
           // Patient flow is logically on_hold but the stage is completed.
           // Workflow requires it to halt in Astro until manual intervention or a new process occurs.
@@ -991,8 +991,8 @@ function appReducer(state: AppState, action: AppAction): AppState {
               currentWorkflowStageId: "treatment_planning" as import("@/lib/types/workflow").WorkflowStageId,
               stages: {
                 ...wf.stages,
-                screening_consultation: { ...wf.stages["screening_consultation"], status: "completed", completedAt: ts, notes: "Screening approved." },
-                treatment_planning: { stageId: "treatment_planning", status: "in_progress", startedAt: ts },
+                screening_consultation: { ...wf.stages["screening_consultation"], status: "completed" as StageStatus, completedAt: ts, notes: "Screening approved." },
+                treatment_planning: { stageId: "treatment_planning", status: "in_progress" as StageStatus, startedAt: ts },
               },
               updatedAt: ts,
             };
@@ -1061,8 +1061,8 @@ function appReducer(state: AppState, action: AppAction): AppState {
           currentWorkflowStageId: "pk_consultation" as import("@/lib/types/workflow").WorkflowStageId,
           stages: {
             ...wf.stages,
-            treatment_planning: { ...wf.stages["treatment_planning"], status: "completed", completedAt: ts },
-            pk_consultation: { stageId: "pk_consultation", status: "in_progress", startedAt: ts },
+            treatment_planning: { ...wf.stages["treatment_planning"], status: "completed" as StageStatus, completedAt: ts },
+            pk_consultation: { stageId: "pk_consultation", status: "in_progress" as StageStatus, startedAt: ts },
           },
           updatedAt: ts,
         };
@@ -1126,8 +1126,8 @@ function appReducer(state: AppState, action: AppAction): AppState {
           currentWorkflowStageId: "reservation_fee" as import("@/lib/types/workflow").WorkflowStageId,
           stages: {
             ...wf.stages,
-            pk_consultation: { ...wf.stages["pk_consultation"], status: "completed", completedAt: ts },
-            reservation_fee: { stageId: "reservation_fee", status: "in_progress", startedAt: ts },
+            pk_consultation: { ...wf.stages["pk_consultation"], status: "completed" as StageStatus, completedAt: ts },
+            reservation_fee: { stageId: "reservation_fee", status: "in_progress" as StageStatus, startedAt: ts },
           },
           updatedAt: ts,
         };
@@ -1195,8 +1195,8 @@ function appReducer(state: AppState, action: AppAction): AppState {
           currentWorkflowStageId: "patient_portal_access" as import("@/lib/types/workflow").WorkflowStageId,
           stages: {
             ...wf.stages,
-            reservation_fee: { ...wf.stages["reservation_fee"], status: "completed", completedAt: ts },
-            patient_portal_access: { stageId: "patient_portal_access", status: "in_progress", startedAt: ts },
+            reservation_fee: { ...wf.stages["reservation_fee"], status: "completed" as StageStatus, completedAt: ts },
+            patient_portal_access: { stageId: "patient_portal_access", status: "in_progress" as StageStatus, startedAt: ts },
           },
           updatedAt: ts,
         };
@@ -1276,8 +1276,8 @@ function appReducer(state: AppState, action: AppAction): AppState {
           currentWorkflowStageId: "travel_preparation" as import("@/lib/types/workflow").WorkflowStageId,
           stages: {
             ...wf.stages,
-            patient_portal_access: { ...wf.stages["patient_portal_access"], status: "completed", completedAt: ts },
-            travel_preparation: { stageId: "travel_preparation", status: "in_progress", startedAt: ts },
+            patient_portal_access: { ...wf.stages["patient_portal_access"], status: "completed" as StageStatus, completedAt: ts },
+            travel_preparation: { stageId: "travel_preparation", status: "in_progress" as StageStatus, startedAt: ts },
           },
           updatedAt: ts,
         };
@@ -1347,8 +1347,8 @@ function appReducer(state: AppState, action: AppAction): AppState {
           currentWorkflowStageId: "advance_payment" as import("@/lib/types/workflow").WorkflowStageId,
           stages: {
             ...wf.stages,
-            travel_preparation: { ...wf.stages["travel_preparation"], status: "completed", completedAt: ts },
-            advance_payment: { stageId: "advance_payment", status: "in_progress", startedAt: ts },
+            travel_preparation: { ...wf.stages["travel_preparation"], status: "completed" as StageStatus, completedAt: ts },
+            advance_payment: { stageId: "advance_payment", status: "in_progress" as StageStatus, startedAt: ts },
           },
           updatedAt: ts,
         };
@@ -1471,8 +1471,8 @@ function appReducer(state: AppState, action: AppAction): AppState {
           currentWorkflowStageId: "panchakarma_treatment" as import("@/lib/types/workflow").WorkflowStageId,
           stages: {
             ...wf.stages,
-            arrival_admission: { ...wf.stages["arrival_admission"], status: "completed", completedAt: ts },
-            panchakarma_treatment: { stageId: "panchakarma_treatment", status: "in_progress", startedAt: ts },
+            arrival_admission: { ...wf.stages["arrival_admission"], status: "completed" as StageStatus, completedAt: ts },
+            panchakarma_treatment: { stageId: "panchakarma_treatment", status: "in_progress" as StageStatus, startedAt: ts },
           },
           updatedAt: ts,
         };
