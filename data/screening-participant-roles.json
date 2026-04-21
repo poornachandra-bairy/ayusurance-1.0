@@ -1,0 +1,7 @@
+{
+  "roles": [
+    { "id": "patient",          "label": "Patient",             "mandatory": true,  "description": "The prospective Panchakarma patient" },
+    { "id": "screening_vaidya", "label": "Screening Vaidya",    "mandatory": true,  "description": "Certified Ayusurance screening physician" },
+    { "id": "pracharaka",       "label": "Referring Pracharaka","mandatory": true,  "description": "The Pracharaka who referred the patient" }
+  ]
+}

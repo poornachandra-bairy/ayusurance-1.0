@@ -1,0 +1,69 @@
+{
+  "orientationKit": {
+    "sections": [
+      {
+        "id": "welcome",
+        "title": "Welcome Letter",
+        "description": "Personalised welcome from the Sadaika medical director.",
+        "deliveryMethod": "email",
+        "required": true
+      },
+      {
+        "id": "program_overview",
+        "title": "Program Overview & Daily Schedule",
+        "description": "Hour-by-hour daily schedule of therapies, meals, yoga and rest periods.",
+        "deliveryMethod": "email",
+        "required": true
+      },
+      {
+        "id": "packing_list",
+        "title": "Packing List",
+        "description": "Recommended clothing (loose cotton), personal items, and items to avoid bringing.",
+        "deliveryMethod": "email",
+        "required": true
+      },
+      {
+        "id": "diet_guidelines",
+        "title": "Pre-Arrival Diet Guidelines",
+        "description": "Dietary do's and don'ts for the 7 days before arrival to prepare the body.",
+        "deliveryMethod": "email",
+        "required": true
+      },
+      {
+        "id": "centre_info",
+        "title": "Centre Information & Facilities",
+        "description": "Location details, maps, centre layout, amenities, and Wi-Fi access.",
+        "deliveryMethod": "email",
+        "required": true
+      },
+      {
+        "id": "emergency_contacts",
+        "title": "Emergency Contacts",
+        "description": "Centre phone, WhatsApp, doctor on call, and local emergency services.",
+        "deliveryMethod": "email",
+        "required": true
+      },
+      {
+        "id": "rules_etiquette",
+        "title": "Centre Rules & Etiquette",
+        "description": "Silence hours, mobile phone usage, alcohol/tobacco policy, and visitor rules.",
+        "deliveryMethod": "email",
+        "required": true
+      },
+      {
+        "id": "payment_reminder",
+        "title": "Balance Payment Reminder",
+        "description": "Reminder of the balance due date, payment modes, and bank account details.",
+        "deliveryMethod": "email",
+        "required": true
+      },
+      {
+        "id": "faq",
+        "title": "Frequently Asked Questions",
+        "description": "Common questions about Panchakarma, the centre, therapies, and expected experiences.",
+        "deliveryMethod": "email",
+        "required": false
+      }
+    ]
+  }
+}

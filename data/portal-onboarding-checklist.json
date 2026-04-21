@@ -1,0 +1,10 @@
+{
+  "items": [
+    { "id": "portal_login",            "label": "Ayusurance Portal Login",       "description": "Patient account created and login credentials sent" },
+    { "id": "dashboard_access",        "label": "Patient Dashboard Access",      "description": "Patient can view and navigate their dashboard" },
+    { "id": "treatment_schedule",      "label": "Treatment Schedule Access",     "description": "Therapy schedule published and visible to patient" },
+    { "id": "medicine_list",           "label": "Medicine List",                 "description": "Amapachana and PK medicine list visible in portal" },
+    { "id": "document_repository",     "label": "Document Repository",           "description": "Consent forms, reports, and e-Kit documents accessible" },
+    { "id": "communication_channel",   "label": "Communication Channel",         "description": "Secure in-portal messaging or WhatsApp channel established" }
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "documentTypes": [
+    { "id": "medical_records", "label": "Medical Records",  "description": "Any current diagnoses, prescriptions, lab reports, or imaging results", "required": true },
+    { "id": "consent_form",    "label": "Consent Form",     "description": "Standard Ayusurance treatment consent — signed by patient",              "required": true },
+    { "id": "disclaimer",      "label": "Disclaimer",       "description": "Panchakarma treatment risk and liability disclaimer — signed by patient", "required": true }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "modules": [
+    { "id": "live_training_sessions", "label": "Live Training Sessions",      "description": "Attend live sessions led by experienced Panchakarma practitioners and senior Vaidyas" },
+    { "id": "recorded_modules",       "label": "Recorded Modules",            "description": "Complete the full library of recorded Ayusurance training videos" },
+    { "id": "case_studies",           "label": "Panchakarma Case Studies",    "description": "Review and discuss documented Panchakarma clinical case studies and outcomes" },
+    { "id": "protocol_training",      "label": "Protocol Training",           "description": "Master Ayusurance standardized screening and case assessment protocols" },
+    { "id": "consultation_framework", "label": "Consultation Framework",      "description": "Learn the structured 30-minute teleconsultation process and documentation standards" }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "qcStages": [
+    {
+      "id": "pracharaka_cert",
+      "label": "Pracharaka Certification",
+      "description": "Verify the referring Pracharaka has completed training and is certified",
+      "items": [
+        { "id": "pc_01", "label": "Pracharaka is a registered program participant" },
+        { "id": "pc_02", "label": "Training modules completed and certified" },
+        { "id": "pc_03", "label": "Referral documentation is complete" },
+        { "id": "pc_04", "label": "Commission agreement on file" }
+      ]
+    },
+    {
+      "id": "astro_validation",
+      "label": "Astro Eligibility Validation",
+      "description": "Confirm astrochart assessment was completed and eligibility status is valid",
+      "items": [
+        { "id": "av_01", "label": "Astrochart prepared by designated astrology team" },
+        { "id": "av_02", "label": "Health cycle analysis documented" },
+        { "id": "av_03", "label": "PK suitability period identified and recorded" },
+        { "id": "av_04", "label": "Eligibility status communicated to patient" }
+      ]
+    },
+    {
+      "id": "screening_approval",
+      "label": "Medical Screening Approval",
+      "description": "Confirm screening was conducted and patient approval is documented",
+      "items": [
+        { "id": "sa_01", "label": "Health questionnaire completed and filed" },
+        { "id": "sa_02", "label": "All required medical records uploaded" },
+        { "id": "sa_03", "label": "Consent forms signed" },
+        { "id": "sa_04", "label": "Screening Vaidya decision recorded" },
+        { "id": "sa_05", "label": "Patient notified of screening outcome" }
+      ]
+    },
+    {
+      "id": "treatment_review",
+      "label": "Treatment Protocol Review",
+      "description": "Verify the treatment plan is complete, distributed, and medicines dispatched",
+      "items": [
+        { "id": "tr_01", "label": "All 12 protocol sections filled by Treating Vaidya" },
+        { "id": "tr_02", "label": "Therapy schedule distributed to ACO, therapy team, patient portal" },
+        { "id": "tr_03", "label": "Medicine lists completed for all 4 categories" },
+        { "id": "tr_04", "label": "Medicine list forwarded to pharmacy partner" },
+        { "id": "tr_05", "label": "Treatment plan approved by Vaidya" }
+      ]
+    },
+    {
+      "id": "aco_operational",
+      "label": "ACO Operational Checklist",
+      "description": "Confirm all ACO-managed admission and coordination steps are complete",
+      "items": [
+        { "id": "ao_01", "label": "Patient received at arrival point" },
+        { "id": "ao_02", "label": "Check-in documentation completed" },
+        { "id": "ao_03", "label": "Consent forms signed on arrival" },
+        { "id": "ao_04", "label": "Room allocated and briefing given" },
+        { "id": "ao_05", "label": "Treatment schedule confirmed with patient" },
+        { "id": "ao_06", "label": "Patient officially entered into PK program" }
+      ]
+    },
+    {
+      "id": "patient_feedback",
+      "label": "Patient Feedback",
+      "description": "Collect and record structured patient feedback on clinical and service quality",
+      "items": [
+        { "id": "pf_01", "label": "Post-program feedback form submitted by patient" },
+        { "id": "pf_02", "label": "NPS score captured" },
+        { "id": "pf_03", "label": "Clinical outcome satisfaction recorded" },
+        { "id": "pf_04", "label": "Pracharaka notified of patient feedback" }
+      ]
+    }
+  ]
+}

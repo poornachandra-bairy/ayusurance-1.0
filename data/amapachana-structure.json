@@ -1,0 +1,8 @@
+{
+  "fields": [
+    { "id": "digestiveHerbs",             "label": "Digestive Herbs",                  "description": "Herbs to kindle Agni and support initial Ama digestion",           "type": "textarea", "placeholder": "e.g. Trikatu churna, Hingvashtaka churna — dose and frequency…" },
+    { "id": "detoxPreparationMedicines",  "label": "Detox Preparation Medicines",      "description": "Specific Shodhana preparatory formulations",                        "type": "textarea", "placeholder": "e.g. Triphala, Gandharva Haritaki — dose and timing…" },
+    { "id": "dietGuidelines",             "label": "Diet Guidelines",                  "description": "Specific dietary protocols for the Amapachana phase",                "type": "textarea", "placeholder": "Kitchari based diet, warm water fasting days, foods to avoid…" },
+    { "id": "purchaseLinks",              "label": "Purchase Links (Geography-Specific)","description": "Online links or pharmacy references suitable for patient's location","type": "textarea", "placeholder": "e.g. For India: X supplier. For USA: Y link. For Europe: Z store…" }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "responsibilities": [
+    {
+      "id": "identify_candidates",
+      "label": "Identify Potential Candidates",
+      "description": "Use professional network, community connections, and personal relationships to identify individuals who may benefit from Panchakarma — those with chronic conditions, lifestyle disorders, stress, metabolic issues, or seeking holistic rejuvenation.",
+      "activities": [
+        "Screen potential candidates against the programme eligibility criteria",
+        "Initiate contact with interested individuals",
+        "Share orientation videos and materials to create awareness",
+        "Assess candidate motivation and readiness for the programme",
+        "Record candidate details using the standard referral checklist"
+      ],
+      "boundary": "Pracharakas must not make clinical recommendations or prognoses. Candidate identification is limited to interest and basic suitability assessment."
+    },
+    {
+      "id": "educate_candidates",
+      "label": "Educate on Ayurveda and Treatment Methods",
+      "description": "Provide accurate, pre-approved information about Ayurveda principles, the Panchakarma treatment methodology, what the programme involves, and why it may be beneficial for the candidate.",
+      "activities": [
+        "Share the SHIVA-approved orientation materials with prospective patients",
+        "Address general questions using the approved communication formats",
+        "Explain programme duration, schedule, and centre environment",
+        "Clarify the difference between general wellness and therapeutic Panchakarma",
+        "Set realistic expectations around outcomes and recovery"
+      ],
+      "boundary": "Pracharakas must use only SHIVA-approved materials for education. No promises of cure or clinical outcomes are to be made."
+    },
+    {
+      "id": "create_wish_list",
+      "label": "Create Patient Wish List Entry",
+      "description": "For candidates who have expressed clear interest and meet the preliminary eligibility indicators, create a formal wish list entry in the Ayusurance system using the standard referral template.",
+      "activities": [
+        "Complete the standard referral template for the candidate",
+        "Capture full name, contact details, location, chief complaint, and motivation",
+        "Record preferred programme duration and preferred months",
+        "Submit the wish list entry to the Ayusurance coordinator",
+        "Confirm receipt of the entry with the candidate"
+      ],
+      "boundary": "Only submit wish list entries for candidates who have expressed genuine interest and where basic eligibility indicators are met."
+    },
+    {
+      "id": "assist_screening",
+      "label": "Assist During Screening Consultations",
+      "description": "Support the patient during the screening consultation stage by ensuring they have the required documents, are prepared for the consultation, and understand the process.",
+      "activities": [
+        "Remind the patient of the screening appointment",
+        "Assist the patient in gathering required medical documents",
+        "Clarify screening process questions from the patient",
+        "Maintain communication with the Ayusurance coordinator regarding patient status",
+        "Report any patient concerns or issues to the coordinator promptly"
+      ],
+      "boundary": "Pracharakas do not participate in or influence the clinical screening decision. Their role is coordination and patient support only."
+    },
+    {
+      "id": "support_patient_journey",
+      "label": "Support the Patient Journey",
+      "description": "Serve as an accessible point of contact and source of encouragement for the referred patient throughout their Panchakarma journey, from wish list to admission.",
+      "activities": [
+        "Maintain periodic check-in communication with the referred patient",
+        "Escalate any patient concerns or hesitations to the Ayusurance coordinator",
+        "Encourage patient adherence to pre-programme guidelines",
+        "Celebrate patient milestones (reservation confirmed, departure, etc.)",
+        "Provide post-programme support guidance as directed by the coordinator"
+      ],
+      "boundary": "Pracharakas do not advise on clinical matters, medication, or treatment protocols at any point."
+    }
+  ]
+}

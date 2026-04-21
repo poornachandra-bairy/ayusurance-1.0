@@ -1,0 +1,12 @@
+{
+  "items": [
+    { "id": "disease_explanation",     "label": "Explanation of Disease (Ayurveda Perspective)",       "description": "Vaidya explains the root cause and Ayurvedic understanding of condition" },
+    { "id": "treatment_approach",      "label": "Treatment Approach",                                  "description": "Overall therapeutic strategy and rationale" },
+    { "id": "pk_procedures",           "label": "Panchakarma Procedures Explained",                    "description": "Each prescribed Shodhana procedure explained in detail" },
+    { "id": "duration_of_stay",        "label": "Duration of Stay",                                    "description": "Number of days required for stay and active treatment" },
+    { "id": "expected_outcomes",       "label": "Expected Outcomes",                                   "description": "Prognosis, expected results, and realistic recovery trajectory" },
+    { "id": "diet_restrictions",       "label": "Diet Restrictions",                                   "description": "Pathya (suitable) and Apathya (unsuitable) foods during treatment" },
+    { "id": "preparation_phase",       "label": "Preparation Phase (Pre-PK)",                          "description": "Instructions for Purvakarma and home preparation prior to arrival" },
+    { "id": "orientation_videos",      "label": "SHIVA Academy Orientation Videos Provided",           "description": "Patient directed to SHIVA Academy orientation video modules" }
+  ]
+}

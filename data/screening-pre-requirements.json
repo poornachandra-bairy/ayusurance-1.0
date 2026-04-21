@@ -1,0 +1,8 @@
+{
+  "requirements": [
+    { "id": "health_questionnaire", "label": "Health Questionnaire",  "description": "Detailed health questionnaire fully completed by patient",  "type": "form" },
+    { "id": "medical_records",      "label": "Medical Records",        "description": "Current diagnoses, prescriptions, lab reports uploaded",    "type": "upload" },
+    { "id": "consent_form",         "label": "Consent Form",           "description": "Standard Ayusurance screening consent form signed",         "type": "upload" },
+    { "id": "disclaimer",           "label": "Disclaimer",             "description": "Panchakarma treatment risk and liability disclaimer signed", "type": "upload" }
+  ]
+}

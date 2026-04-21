@@ -1,0 +1,46 @@
+{
+  "roles": [
+    {
+      "id": "pracharaka",
+      "label": "Pracharaka",
+      "description": "Referral partner who identifies and refers prospective Panchakarma patients from their community.",
+      "permissions": ["view_patients", "create_wishlist", "view_wishlist"]
+    },
+    {
+      "id": "coordinator",
+      "label": "Program Coordinator",
+      "description": "Sadaika/Ayusurance operations staff managing the end-to-end patient workflow.",
+      "permissions": [
+        "view_patients",
+        "edit_patients",
+        "manage_wishlist",
+        "manage_screening",
+        "manage_reservation",
+        "manage_documents",
+        "manage_portal",
+        "manage_travel_payment",
+        "manage_admission",
+        "view_qc"
+      ]
+    },
+    {
+      "id": "ayurveda_doctor",
+      "label": "Ayurveda Doctor",
+      "description": "Qualified Ayurveda physician conducting eligibility assessments, treatment planning and consultations.",
+      "permissions": [
+        "view_patients",
+        "manage_astro_eligibility",
+        "manage_screening",
+        "manage_treatment_plan",
+        "manage_pk_consultation",
+        "manage_qc"
+      ]
+    },
+    {
+      "id": "admin",
+      "label": "Administrator",
+      "description": "System administrator with full access to all records, configuration and data management.",
+      "permissions": ["*"]
+    }
+  ]
+}

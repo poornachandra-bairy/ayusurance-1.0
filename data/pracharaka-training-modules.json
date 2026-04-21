@@ -1,0 +1,118 @@
+{
+  "groups": [
+    {
+      "id": "training_components",
+      "label": "Training Components",
+      "description": "Live and recorded sessions forming the core SHIVA Pracharaka certification curriculum.",
+      "modules": [
+        {
+          "id": "live_sessions",
+          "label": "Live Sessions by Vaidya Satyajith's Students",
+          "description": "Interactive live training sessions delivered by experienced Panchakarma referral practitioners from Vaidya Satyajith's lineage. Covers practical referral scenarios, eligibility identification, and real-case discussions.",
+          "type": "live_session",
+          "required": true,
+          "estimatedHours": 8,
+          "sessions": 4,
+          "sessionDurationHours": 2
+        },
+        {
+          "id": "recorded_modules",
+          "label": "Recorded Training Modules",
+          "description": "Self-paced recorded video modules covering the complete Panchakarma referral methodology, programme structure, and centre operations. Available on the Ayusurance platform.",
+          "type": "recorded",
+          "required": true,
+          "estimatedHours": 6,
+          "moduleCount": 6
+        },
+        {
+          "id": "patient_orientation_training",
+          "label": "Patient Orientation Training",
+          "description": "Training on how to orient prospective patients about the Panchakarma process, what to expect, programme logistics, and how to address common concerns.",
+          "type": "recorded",
+          "required": true,
+          "estimatedHours": 3
+        },
+        {
+          "id": "eligibility_awareness",
+          "label": "Panchakarma Eligibility Awareness",
+          "description": "Module covering the Ayurvedic and constitutional criteria for Panchakarma eligibility. Equips the Pracharaka to identify strong candidates and avoid unsuitable referrals.",
+          "type": "recorded",
+          "required": true,
+          "estimatedHours": 2
+        },
+        {
+          "id": "communication_training",
+          "label": "Communication Training",
+          "description": "Training on effective, sensitive, and accurate communication of Panchakarma benefits, costs, duration, and programme expectations to prospective patients.",
+          "type": "recorded",
+          "required": true,
+          "estimatedHours": 2
+        },
+        {
+          "id": "referral_ethics",
+          "label": "Referral Ethics and Guidelines",
+          "description": "Guidelines covering ethical conduct in referrals, prohibition on misrepresentation, data privacy obligations, boundaries of the Pracharaka role, and the code of conduct under the Ayusurance framework.",
+          "type": "recorded",
+          "required": true,
+          "estimatedHours": 1.5
+        }
+      ]
+    },
+    {
+      "id": "learning_materials",
+      "label": "Learning Materials",
+      "description": "Reference documents and resources provided to all SHIVA Certified Pracharakas for ongoing use.",
+      "modules": [
+        {
+          "id": "text_manuals",
+          "label": "Text Manuals",
+          "description": "Comprehensive written reference manuals covering the Sadaika Panchakarma programme, referral process, patient journey, and operational guidelines.",
+          "type": "material",
+          "required": true,
+          "format": "PDF"
+        },
+        {
+          "id": "orientation_videos",
+          "label": "Orientation Videos",
+          "description": "Short explainer videos designed for Pracharakas to share with prospective patients to introduce them to Panchakarma, the centre, and the Sadaika programme.",
+          "type": "material",
+          "required": true,
+          "format": "Video"
+        },
+        {
+          "id": "referral_checklists",
+          "label": "Referral Checklists",
+          "description": "Standardised checklists for the Pracharaka to assess candidate suitability before making a formal referral. Ensures only well-qualified candidates enter the pipeline.",
+          "type": "material",
+          "required": true,
+          "format": "PDF"
+        },
+        {
+          "id": "patient_comm_formats",
+          "label": "Patient Communication Formats",
+          "description": "Pre-approved message templates and communication formats for WhatsApp, email, and in-person conversations with prospective patients.",
+          "type": "material",
+          "required": true,
+          "format": "Document"
+        },
+        {
+          "id": "referral_templates",
+          "label": "Standard Referral Templates",
+          "description": "Formal referral documentation templates to be completed when introducing a patient into the Ayusurance system. Ensures consistent and complete data capture.",
+          "type": "material",
+          "required": true,
+          "format": "Document"
+        },
+        {
+          "id": "shiva_ayurveda_course",
+          "label": "SHIVA General Ayurveda Awareness Course",
+          "description": "The foundational Ayurveda awareness course under the SHIVA framework. Provides essential background on Ayurvedic principles, Panchakarma rationale, and Vaidya Satyajith's lineage.",
+          "type": "course",
+          "required": true,
+          "estimatedHours": 5,
+          "platform": "Ayusurance Platform"
+        }
+      ]
+    }
+  ]
+}

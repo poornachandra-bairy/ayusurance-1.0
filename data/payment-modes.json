@@ -1,0 +1,18 @@
+{
+  "modes": [
+    { "id": "wire_transfer", "label": "Wire Transfer",  "description": "International bank wire to Ayusurance account" },
+    { "id": "bank_transfer", "label": "Bank Transfer",  "description": "Domestic bank-to-bank transfer" },
+    { "id": "card",          "label": "Card Payment",   "description": "Debit / Credit card via payment gateway" },
+    { "id": "cash",          "label": "Cash",           "description": "Cash on arrival — only where explicitly permitted" }
+  ],
+  "advance": {
+    "label": "Panchakarma Advance Payment",
+    "note": "Amount to be finalized — confirm with ACO before collecting",
+    "refundable": false
+  },
+  "finalPayment": {
+    "label": "Final Balance Payment",
+    "dueOn": "arrival",
+    "note": "Full remaining balance due on day of arrival. Payment mode must be declared in advance."
+  }
+}

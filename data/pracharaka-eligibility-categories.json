@@ -1,0 +1,60 @@
+{
+  "categories": [
+    {
+      "id": "yoga_teacher",
+      "label": "Yoga Teacher",
+      "description": "Practising yoga instructors who interact regularly with students seeking wellness and holistic health solutions.",
+      "rationale": "Daily contact with health-conscious individuals who may benefit from Panchakarma; established trust with regular students.",
+      "examples": ["Studio yoga teachers", "Yoga retreat facilitators", "Certified yoga therapists"]
+    },
+    {
+      "id": "ayurveda_beneficiary",
+      "label": "Ayurveda Beneficiary",
+      "description": "Individuals who have personally benefited from Ayurvedic treatment and are motivated to share their experience.",
+      "rationale": "Personal testimony creates authentic referral credibility; deep motivation to help others achieve similar results.",
+      "examples": ["Past Ayurveda treatment recipients", "Satisfied long-term Ayurveda patients"]
+    },
+    {
+      "id": "wellness_coach",
+      "label": "Wellness Coach",
+      "description": "Certified wellness professionals guiding clients through lifestyle, nutrition, and holistic health programmes.",
+      "rationale": "Existing client base seeking integrative solutions; positioned to recommend Panchakarma as part of comprehensive treatment plans.",
+      "examples": ["Lifestyle coaches", "Nutrition counsellors", "Integrative health practitioners"]
+    },
+    {
+      "id": "health_influencer",
+      "label": "Health Influencer",
+      "description": "Digital creators and thought leaders with engaged audiences in health, wellness, and alternative medicine.",
+      "rationale": "Broad reach to wellness-oriented audiences; ability to educate and create awareness at scale.",
+      "examples": ["Wellness content creators", "Health bloggers", "Social media educators in natural health"]
+    },
+    {
+      "id": "ayurveda_enthusiast",
+      "label": "Ayurveda Enthusiast",
+      "description": "Passionate individuals with deep personal interest in Ayurveda who are embedded in Ayurveda communities.",
+      "rationale": "Trust within Ayurveda circles; genuine advocacy driven by personal conviction rather than professional obligation.",
+      "examples": ["Ayurveda community participants", "Shastra study group members", "Ayurveda bookclub members"]
+    },
+    {
+      "id": "panchakarma_alumni",
+      "label": "Panchakarma Alumni",
+      "description": "Individuals who have completed a Panchakarma programme at a Sadaika-affiliated centre.",
+      "rationale": "First-hand programme experience enables highly credible referrals; strong personal motivation to recommend the programme.",
+      "examples": ["Past Sadaika Panchakarma programme completers", "Repeat Panchakarma patients"]
+    },
+    {
+      "id": "ayurveda_practitioner_non_clinical",
+      "label": "Ayurveda Practitioner (Non-Clinical)",
+      "description": "Non-clinical Ayurveda practitioners offering complementary therapies, lifestyle counselling, or wellness services.",
+      "rationale": "Professional credibility with health-seeking clients; able to identify clinical referral needs beyond their scope.",
+      "examples": ["Ayurvedic massage therapists", "Panchakarma-aware wellness consultants", "Dinacharya coaches"]
+    },
+    {
+      "id": "ayurveda_practitioner_clinical",
+      "label": "Ayurveda Practitioner (Clinical)",
+      "description": "Qualified Ayurveda doctors (BAMS and above) who encounter patients requiring intensive Panchakarma intervention.",
+      "rationale": "Clinical authority to recommend therapeutic Panchakarma; highest referral credibility with prospective patients.",
+      "examples": ["BAMS practitioners", "Ayurvedic physicians", "Integrated medicine doctors"]
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "checklists": [
+    {
+      "id": "screening_checklist",
+      "stageId": "screening",
+      "label": "Medical Screening Checklist",
+      "items": [
+        { "id": "sc_01", "label": "Patient demographics collected", "required": true },
+        { "id": "sc_02", "label": "Chief complaint documented", "required": true },
+        { "id": "sc_03", "label": "Past medical history reviewed", "required": true },
+        { "id": "sc_04", "label": "Current medications listed", "required": true },
+        { "id": "sc_05", "label": "Allergies noted", "required": true },
+        { "id": "sc_06", "label": "Surgical history recorded", "required": false },
+        { "id": "sc_07", "label": "Family history noted", "required": false },
+        { "id": "sc_08", "label": "Baseline vitals obtained", "required": true },
+        { "id": "sc_09", "label": "Contraindications assessed", "required": true },
+        { "id": "sc_10", "label": "Blood reports reviewed (if available)", "required": false },
+        { "id": "sc_11", "label": "Diabetes / hypertension flag", "required": true },
+        { "id": "sc_12", "label": "Mental health status noted", "required": false },
+        { "id": "sc_13", "label": "Medical clearance signed by doctor", "required": true }
+      ]
+    },
+    {
+      "id": "reservation_checklist",
+      "stageId": "reservation",
+      "label": "Reservation & Orientation Checklist",
+      "items": [
+        { "id": "res_01", "label": "Program dates confirmed with patient", "required": true },
+        { "id": "res_02", "label": "Accommodation allocated", "required": true },
+        { "id": "res_03", "label": "Booking deposit collected", "required": true },
+        { "id": "res_04", "label": "Deposit receipt issued", "required": true },
+        { "id": "res_05", "label": "Orientation kit sent", "required": true },
+        { "id": "res_06", "label": "Pre-arrival guidelines emailed", "required": true },
+        { "id": "res_07", "label": "Dietary restrictions noted", "required": false },
+        { "id": "res_08", "label": "Special accommodation needs addressed", "required": false }
+      ]
+    },
+    {
+      "id": "admission_checklist",
+      "stageId": "admission",
+      "label": "Arrival & Admission Checklist",
+      "items": [
+        { "id": "adm_01", "label": "Patient received at centre", "required": true },
+        { "id": "adm_02", "label": "Identity verified", "required": true },
+        { "id": "adm_03", "label": "Admission paperwork completed", "required": true },
+        { "id": "adm_04", "label": "Luggage assistance provided", "required": false },
+        { "id": "adm_05", "label": "Room allocated and key handed", "required": true },
+        { "id": "adm_06", "label": "Welcome orientation conducted", "required": true },
+        { "id": "adm_07", "label": "Admission assessment by doctor completed", "required": true },
+        { "id": "adm_08", "label": "Therapist assigned", "required": true },
+        { "id": "adm_09", "label": "Program schedule shared", "required": true },
+        { "id": "adm_10", "label": "Safety and centre rules communicated", "required": true },
+        { "id": "adm_11", "label": "Emergency contact details confirmed", "required": true }
+      ]
+    },
+    {
+      "id": "qc_checklist",
+      "stageId": "quality-control",
+      "label": "Quality Control Checklist",
+      "items": [
+        { "id": "qc_01", "label": "Mid-program clinical review conducted", "required": true },
+        { "id": "qc_02", "label": "Treatment adjustments documented", "required": false },
+        { "id": "qc_03", "label": "Patient satisfaction survey administered", "required": true },
+        { "id": "qc_04", "label": "Clinical outcomes recorded", "required": true },
+        { "id": "qc_05", "label": "Adverse events reviewed", "required": true },
+        { "id": "qc_06", "label": "Post-program care plan given to patient", "required": true },
+        { "id": "qc_07", "label": "Follow-up appointment scheduled", "required": false },
+        { "id": "qc_08", "label": "Pracharaka notified of outcome", "required": true },
+        { "id": "qc_09", "label": "Referral commission processed", "required": false },
+        { "id": "qc_10", "label": "Program learnings documented", "required": false }
+      ]
+    },
+    {
+      "id": "portal_checklist",
+      "stageId": "patient-portal",
+      "label": "Patient Portal Onboarding Checklist",
+      "items": [
+        { "id": "por_01", "label": "Portal account created", "required": true },
+        { "id": "por_02", "label": "Login credentials sent securely", "required": true },
+        { "id": "por_03", "label": "Patient confirmed portal login", "required": true },
+        { "id": "por_04", "label": "Treatment plan uploaded to portal", "required": true },
+        { "id": "por_05", "label": "Consent forms available in portal", "required": true },
+        { "id": "por_06", "label": "Pre-program health form completed online", "required": true },
+        { "id": "por_07", "label": "FAQ guide shared", "required": false }
+      ]
+    }
+  ]
+}

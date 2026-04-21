@@ -1,0 +1,16 @@
+{
+  "sections": [
+    { "id": "prakriti",          "label": "Prakriti Assessment",      "description": "Constitutional type of the patient (Vata/Pitta/Kapha)", "type": "textarea" },
+    { "id": "vikruti",           "label": "Vikruti Assessment",       "description": "Current imbalance or deviated constitution",            "type": "textarea" },
+    { "id": "koshta",            "label": "Koshta Assessment",        "description": "Bowel/digestive nature (Mridu, Madhya, Krura Koshta)", "type": "text" },
+    { "id": "srotoDusti",        "label": "Srotodusti Assessment",    "description": "Channel system afflictions and mode of pathology",      "type": "textarea" },
+    { "id": "doshaAssessment",   "label": "Dosha Assessment",         "description": "Predominant Dosha, seat, aggravation and spread",       "type": "textarea" },
+    { "id": "sampraptiAnalysis", "label": "Samprapti Analysis",       "description": "Pathogenesis — six stages of disease progression",      "type": "textarea" },
+    { "id": "ayurvedicDiagnosis","label": "Ayurvedic Diagnosis",      "description": "Full Ayurvedic disease name and classification",        "type": "text" },
+    { "id": "panchakarmaType",   "label": "Panchakarma Type",         "description": "Prescribed procedure(s) e.g. Vamana, Virechana, Basti","type": "text" },
+    { "id": "therapyDuration",   "label": "Therapy Duration",         "description": "Number of days for stay and active treatment",         "type": "text" },
+    { "id": "prePkPreparation",  "label": "Pre-PK Preparation",       "description": "Purvakarma — Snehana and Swedana protocol",            "type": "textarea" },
+    { "id": "mainPkSchedule",    "label": "Main PK Schedule",         "description": "Day-by-day Pradhan Karma treatment plan",              "type": "textarea" },
+    { "id": "postPkCare",        "label": "Post-PK Care & Medicine",  "description": "Paschatkarma — diet, rest, and follow-on medicines",   "type": "textarea" }
+  ]
+}

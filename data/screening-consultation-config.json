@@ -1,0 +1,9 @@
+{
+  "fee": { "amountUSD": 100, "currency": "USD", "label": "Screening Consultation Fee" },
+  "duration": { "minutes": 30, "label": "30-minute teleconsultation" },
+  "mode": "teleconsultation",
+  "sessions": [
+    { "id": "initial",  "label": "Initial Consultation",         "requiresScheduling": true, "description": "First screening session with Vaidya" },
+    { "id": "followup", "label": "Follow-up Consultation",       "requiresScheduling": true, "afterDays": 15, "description": "Review session 15 days after initial" }
+  ]
+}

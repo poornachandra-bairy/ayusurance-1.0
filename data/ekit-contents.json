@@ -1,0 +1,16 @@
+{
+  "items": [
+    { "id": "welcome_letter",         "label": "Welcome Letter & Invitation",          "description": "Personalised welcome note and formal invitation to the Panchakarma program", "internationalOnly": false },
+    { "id": "form_c",                  "label": "FORM C (International Patients in India)", "description": "Mandatory C-Form for foreign nationals staying at the Panchakarma centre in India", "internationalOnly": true },
+    { "id": "center_orientation",      "label": "Panchakarma Centre Orientation",       "description": "Overview of the centre — facilities, schedule, staff, and daily routines",      "internationalOnly": false },
+    { "id": "code_of_conduct",         "label": "Code of Conduct",                      "description": "Behavioural guidelines and expectations during the treatment stay",               "internationalOnly": false },
+    { "id": "payment_instructions",    "label": "Payment Instructions",                 "description": "Detailed guidance on making balance treatment payments",                        "internationalOnly": false },
+    { "id": "bank_details",            "label": "Bank Details for Wire Transfer",       "description": "Authorised bank account details for international wire transfer",               "internationalOnly": false },
+    { "id": "dos_donts",               "label": "Do's & Don'ts of Panchakarma",         "description": "Lifestyle, diet and behavioural guidelines for before and during treatment",    "internationalOnly": false },
+    { "id": "visa_guidance",           "label": "Visa Guidance",                        "description": "Visa category, duration, and application process guidance for India travel",    "internationalOnly": true },
+    { "id": "emergency_contacts",      "label": "Emergency Contact Details",            "description": "Key contact numbers — centre, Vaidya, Ayusurance coordinator",                "internationalOnly": false },
+    { "id": "packing_checklist",       "label": "Packing Checklist",                   "description": "Recommended items to pack for the stay duration",                              "internationalOnly": false },
+    { "id": "stay_guidelines",         "label": "Stay Guidelines",                      "description": "Room policies, meal timings, internet use, and general stay expectations",     "internationalOnly": false },
+    { "id": "travel_instructions",     "label": "Travel Instructions",                  "description": "Airport, transfers, and arrival logistics guidance",                           "internationalOnly": false }
+  ]
+}

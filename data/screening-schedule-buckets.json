@@ -1,0 +1,16 @@
+{
+  "buckets": [
+    {
+      "id": "india_europe",
+      "label": "India / Europe",
+      "timeZones": ["IST (UTC+5:30)", "CET (UTC+1)", "CEST (UTC+2)"],
+      "notes": "Morning IST slots align with European afternoon. Suitable for patients in India, UK, Germany, France, and neighbouring regions."
+    },
+    {
+      "id": "usa_australia",
+      "label": "USA / Australia",
+      "timeZones": ["EST (UTC-5)", "PST (UTC-8)", "AEST (UTC+10)"],
+      "notes": "Evening IST aligns with US East Coast morning and Australian evening. Suitable for patients across North America and Australia."
+    }
+  ]
+}

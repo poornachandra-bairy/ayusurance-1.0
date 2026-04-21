@@ -1,0 +1,8 @@
+{
+  "tasks": [
+    { "id": "flight_tickets",          "label": "Flight Tickets Booked",          "description": "Patient confirms flight reservations with travel dates and booking reference", "internationalNote": true },
+    { "id": "travel_insurance",        "label": "Travel Insurance Arranged",        "description": "Valid travel insurance policy obtained and shared", "internationalNote": true },
+    { "id": "medical_insurance",       "label": "Medical Insurance Arranged",       "description": "Medical/health insurance in force for treatment duration", "internationalNote": false },
+    { "id": "arrival_date_confirmed",  "label": "Arrival Date Confirmed",           "description": "Patient has confirmed expected date and time of arrival", "internationalNote": false }
+  ]
+}

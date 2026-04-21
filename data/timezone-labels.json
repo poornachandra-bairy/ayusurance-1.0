@@ -1,0 +1,18 @@
+{
+  "timezones": [
+    { "id": "IST", "label": "India Standard Time (IST)", "offset": "+05:30", "region": "Asia/Kolkata" },
+    { "id": "GST", "label": "Gulf Standard Time (GST)", "offset": "+04:00", "region": "Asia/Dubai" },
+    { "id": "SGT", "label": "Singapore Time (SGT)", "offset": "+08:00", "region": "Asia/Singapore" },
+    { "id": "AEST", "label": "Australian Eastern Time (AEST)", "offset": "+10:00", "region": "Australia/Sydney" },
+    { "id": "EAT", "label": "East Africa Time (EAT)", "offset": "+03:00", "region": "Africa/Nairobi" },
+    { "id": "UTC", "label": "Coordinated Universal Time (UTC)", "offset": "+00:00", "region": "UTC" },
+    { "id": "EST", "label": "Eastern Standard Time (EST)", "offset": "-05:00", "region": "America/New_York" },
+    { "id": "PST", "label": "Pacific Standard Time (PST)", "offset": "-08:00", "region": "America/Los_Angeles" },
+    { "id": "BST", "label": "British Summer Time (BST)", "offset": "+01:00", "region": "Europe/London" }
+  ],
+  "consultationSlots": [
+    { "id": "morning", "label": "Morning", "timeIST": "09:00 – 12:00 IST" },
+    { "id": "afternoon", "label": "Afternoon", "timeIST": "14:00 – 17:00 IST" },
+    { "id": "evening", "label": "Evening", "timeIST": "18:00 – 20:00 IST" }
+  ]
+}

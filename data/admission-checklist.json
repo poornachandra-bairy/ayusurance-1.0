@@ -1,0 +1,10 @@
+{
+  "items": [
+    { "id": "patient_received",       "label": "Patient Received by ACO",         "description": "ACO meets patient at arrival point (airport, station, or centre entrance)" },
+    { "id": "check_in_documentation", "label": "Check-in Documentation Completed","description": "All arrival documents reviewed and filed" },
+    { "id": "consent_signing",        "label": "Consent Forms Signed",             "description": "Final consent forms signed in person at the centre" },
+    { "id": "room_allocation",        "label": "Room Allocated",                   "description": "Patient assigned to their room and room briefing given" },
+    { "id": "schedule_confirmation",  "label": "Treatment Schedule Confirmed",     "description": "Printed/digital schedule shared with patient and confirmed" },
+    { "id": "pk_program_entry",       "label": "Admitted to Panchakarma Program",  "description": "Patient officially entered into the Panchakarma program records" }
+  ]
+}

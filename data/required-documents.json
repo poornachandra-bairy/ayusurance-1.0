@@ -1,0 +1,11 @@
+{
+  "documents": [
+    { "id": "passport_copy",    "label": "Passport Copy",       "description": "Clear scan/photo of valid passport (all pages with stamps)",   "requiredForInternational": true,  "requiredForDomestic": false },
+    { "id": "visa_copy",        "label": "Visa Copy",           "description": "Copy of India visa (all applicable categories)",                "requiredForInternational": true,  "requiredForDomestic": false },
+    { "id": "insurance_copy",   "label": "Insurance Copy",      "description": "Travel and/or medical insurance policy document",               "requiredForInternational": true,  "requiredForDomestic": false },
+    { "id": "medical_reports",  "label": "Medical Reports",     "description": "Recent lab reports, imaging, prescriptions, and referral notes", "requiredForInternational": true,  "requiredForDomestic": true  },
+    { "id": "consent_forms",    "label": "Consent Forms",       "description": "All signed treatment consent and disclaimer forms",             "requiredForInternational": true,  "requiredForDomestic": true  },
+    { "id": "payment_proof",    "label": "Payment Proof",       "description": "Receipts for reservation fee and any advance payments made",    "requiredForInternational": true,  "requiredForDomestic": true  },
+    { "id": "emergency_contact","label": "Emergency Contact",   "description": "Name, relation, phone number of emergency contact",            "requiredForInternational": true,  "requiredForDomestic": true  }
+  ]
+}

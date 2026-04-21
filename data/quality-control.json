@@ -1,0 +1,58 @@
+{
+  "qcDomains": [
+    {
+      "id": "clinical_outcomes",
+      "label": "Clinical Outcomes",
+      "items": [
+        { "id": "qc_clin_01", "label": "Chief complaint improvement documented", "weight": 3 },
+        { "id": "qc_clin_02", "label": "Prakriti assessment post-program", "weight": 2 },
+        { "id": "qc_clin_03", "label": "Weight / BMI change recorded", "weight": 1 },
+        { "id": "qc_clin_04", "label": "Vitals comparison (pre vs post)", "weight": 2 },
+        { "id": "qc_clin_05", "label": "Doctor's clinical notes completed", "weight": 3 }
+      ]
+    },
+    {
+      "id": "patient_experience",
+      "label": "Patient Experience",
+      "items": [
+        { "id": "qc_exp_01", "label": "Pre-arrival communication rated satisfactory", "weight": 2 },
+        { "id": "qc_exp_02", "label": "Centre cleanliness and hygiene rated satisfactory", "weight": 3 },
+        { "id": "qc_exp_03", "label": "Therapist skill and professionalism rated satisfactory", "weight": 3 },
+        { "id": "qc_exp_04", "label": "Food quality rated satisfactory", "weight": 2 },
+        { "id": "qc_exp_05", "label": "Overall experience rated satisfactory", "weight": 3 },
+        { "id": "qc_exp_06", "label": "Would recommend to others (NPS captured)", "weight": 2 }
+      ]
+    },
+    {
+      "id": "process_compliance",
+      "label": "Process Compliance",
+      "items": [
+        { "id": "qc_proc_01", "label": "All consent forms signed", "weight": 3 },
+        { "id": "qc_proc_02", "label": "Screening completed before program", "weight": 3 },
+        { "id": "qc_proc_03", "label": "Treatment plan followed without deviation", "weight": 2 },
+        { "id": "qc_proc_04", "label": "Daily therapy logs maintained", "weight": 2 },
+        { "id": "qc_proc_05", "label": "Adverse event protocol followed (if applicable)", "weight": 3 }
+      ]
+    },
+    {
+      "id": "referral_quality",
+      "label": "Referral Quality",
+      "items": [
+        { "id": "qc_ref_01", "label": "Patient referred by registered Pracharaka", "weight": 2 },
+        { "id": "qc_ref_02", "label": "Pracharaka expectation setting was accurate", "weight": 2 },
+        { "id": "qc_ref_03", "label": "Referral documentation complete", "weight": 1 }
+      ]
+    }
+  ],
+  "ratingScale": {
+    "min": 1,
+    "max": 5,
+    "labels": {
+      "1": "Very Poor",
+      "2": "Poor",
+      "3": "Acceptable",
+      "4": "Good",
+      "5": "Excellent"
+    }
+  }
+}

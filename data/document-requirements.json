@@ -1,0 +1,100 @@
+{
+  "documentTypes": [
+    {
+      "id": "pracharaka_agreement",
+      "label": "Pracharaka Referral Agreement",
+      "stageId": "pracharaka",
+      "required": true,
+      "description": "Signed agreement between Sadaika and the Pracharaka outlining referral terms and commission.",
+      "format": ["PDF"]
+    },
+    {
+      "id": "patient_consent",
+      "label": "Patient Informed Consent Form",
+      "stageId": "pk-consultation",
+      "required": true,
+      "description": "Written consent for Panchakarma treatment, risks, and data processing.",
+      "format": ["PDF"]
+    },
+    {
+      "id": "screening_report",
+      "label": "Medical Screening Report",
+      "stageId": "screening",
+      "required": true,
+      "description": "Doctor-signed medical screening summary.",
+      "format": ["PDF"]
+    },
+    {
+      "id": "treatment_plan_doc",
+      "label": "Treatment Plan Document",
+      "stageId": "treatment-plan",
+      "required": true,
+      "description": "Detailed Panchakarma protocol signed by the Ayurveda doctor.",
+      "format": ["PDF"]
+    },
+    {
+      "id": "blood_reports",
+      "label": "Blood Investigation Reports",
+      "stageId": "screening",
+      "required": false,
+      "description": "CBC, LFT, RFT, fasting glucose and lipid profile.",
+      "format": ["PDF", "JPEG", "PNG"]
+    },
+    {
+      "id": "photo_id",
+      "label": "Government Photo ID",
+      "stageId": "wish-list",
+      "required": true,
+      "description": "Aadhaar / Passport / Driving License for identity verification.",
+      "format": ["PDF", "JPEG", "PNG"]
+    },
+    {
+      "id": "payment_receipt",
+      "label": "Payment Receipt",
+      "stageId": "travel-payment",
+      "required": true,
+      "description": "Acknowledged receipt of advance deposit and balance payment.",
+      "format": ["PDF"]
+    },
+    {
+      "id": "travel_itinerary",
+      "label": "Travel Itinerary",
+      "stageId": "travel-payment",
+      "required": false,
+      "description": "Flight / train booking confirmation for arrival coordination.",
+      "format": ["PDF", "JPEG"]
+    },
+    {
+      "id": "admission_form",
+      "label": "Admission Form",
+      "stageId": "admission",
+      "required": true,
+      "description": "Completed in-centre admission form signed by patient and admitting doctor.",
+      "format": ["PDF"]
+    },
+    {
+      "id": "astro_report",
+      "label": "Astro-Eligibility Report",
+      "stageId": "astro-eligibility",
+      "required": true,
+      "description": "Signed eligibility assessment by the Ayurveda doctor.",
+      "format": ["PDF"]
+    },
+    {
+      "id": "qc_report",
+      "label": "QC Outcome Report",
+      "stageId": "quality-control",
+      "required": true,
+      "description": "Post-program quality review and clinical outcomes documentation.",
+      "format": ["PDF"]
+    },
+    {
+      "id": "orientation_acknowledgement",
+      "label": "Orientation Kit Acknowledgement",
+      "stageId": "reservation",
+      "required": false,
+      "description": "Patient's signed/digital acknowledgement of receiving orientation materials.",
+      "format": ["PDF"]
+    }
+  ]
+}

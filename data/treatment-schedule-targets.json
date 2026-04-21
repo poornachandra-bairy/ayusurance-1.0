@@ -1,0 +1,7 @@
+{
+  "targets": [
+    { "id": "aco",            "label": "ACO (Center Organiser)",  "description": "Share therapy schedule with the Ayusurance Center Organiser" },
+    { "id": "therapy_team",   "label": "Therapy Team",            "description": "Share with the on-site therapy team responsible for daily treatments" },
+    { "id": "patient_portal", "label": "Patient Portal",          "description": "Publish therapy schedule to the patient's Ayusurance portal access" }
+  ]
+}

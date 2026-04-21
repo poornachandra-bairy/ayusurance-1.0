@@ -1,0 +1,11 @@
+{
+  "feeAmountUSD": 300,
+  "refundable": false,
+  "currency": "USD",
+  "label": "Non-refundable Reservation Fee",
+  "includes": [
+    "Panchakarma Orientation e-Kit",
+    "Digital onboarding",
+    "Documentation package"
+  ]
+}

@@ -1,0 +1,121 @@
+{
+  "sections": [
+    {
+      "id": "personal_details",
+      "title": "Personal Details",
+      "description": "Basic identity and demographic information",
+      "fields": [
+        {
+          "id": "fullName",
+          "label": "Full Name",
+          "type": "text",
+          "required": true
+        },
+        {
+          "id": "gender",
+          "label": "Gender",
+          "type": "select",
+          "options": ["Male", "Female", "Other"],
+          "required": true
+        },
+        {
+          "id": "email",
+          "label": "Email ID",
+          "type": "email",
+          "required": true
+        },
+        {
+          "id": "whatsappNumber",
+          "label": "WhatsApp Number",
+          "type": "tel",
+          "required": true,
+          "placeholder": "+91-0000000000"
+        },
+        {
+          "id": "placeOfResidence",
+          "label": "Place of Residence",
+          "type": "text",
+          "required": true,
+          "placeholder": "City, State, Country"
+        },
+        {
+          "id": "occupation",
+          "label": "Occupation",
+          "type": "text",
+          "required": true
+        }
+      ]
+    },
+    {
+      "id": "astrological_details",
+      "title": "Astrological Details",
+      "description": "Required for evaluating Astro-timing suitability",
+      "fields": [
+        {
+          "id": "dateOfBirth",
+          "label": "Date of Birth",
+          "type": "date",
+          "required": true
+        },
+        {
+          "id": "placeOfBirth",
+          "label": "Place of Birth",
+          "type": "text",
+          "required": true,
+          "placeholder": "City, State, Country"
+        },
+        {
+          "id": "timeOfBirth",
+          "label": "Time of Birth",
+          "type": "time",
+          "required": true
+        }
+      ]
+    },
+    {
+      "id": "clinical_motivation",
+      "title": "Clinical & Motivation",
+      "description": "Medical context and reasons for seeking treatment",
+      "fields": [
+        {
+          "id": "healthConcerns",
+          "label": "Current Health Concerns",
+          "type": "textarea",
+          "required": true,
+          "rows": 3,
+          "placeholder": "List any chronic conditions, symptoms, or acute problems..."
+        },
+        {
+          "id": "seekingAyurveda",
+          "label": "What are you seeking out of Ayurveda?",
+          "type": "textarea",
+          "required": true,
+          "rows": 3,
+          "placeholder": "Specific goals, detox, rejuvenation, disease management..."
+        },
+        {
+          "id": "previousTreatments",
+          "label": "Previous Panchakarma or Ayurveda treatment details (if any)",
+          "type": "textarea",
+          "required": false,
+          "rows": 3,
+          "placeholder": "Where, when, and what procedures were done..."
+        }
+      ]
+    },
+    {
+      "id": "logistics",
+      "title": "Logistics & Availability",
+      "description": "Scheduling constraints",
+      "fields": [
+        {
+          "id": "availabilityTimeframe",
+          "label": "Availability timeframe",
+          "type": "text",
+          "required": true,
+          "placeholder": "e.g., February 2026, Any 3 weeks in summer..."
+        }
+      ]
+    }
+  ]
+}

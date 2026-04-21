@@ -1,0 +1,12 @@
+{
+  "categories": [
+    { "id": "amapachana", "label": "Amapachana Medicines",  "description": "Digestive and metabolic toxin-clearing herbs prescribed before PK" },
+    { "id": "pre_pk",     "label": "Pre-PK Medicines",      "description": "Medicines used during Purvakarma (Snehana/Swedana preparation)" },
+    { "id": "during_pk",  "label": "During-PK Medicines",   "description": "Medicines administered during active Panchakarma treatment" },
+    { "id": "post_pk",    "label": "Post-PK Medicines",     "description": "Paschatkarma medicines for recovery, diet support, and rasayana" }
+  ],
+  "forwardingTargets": [
+    { "id": "pharmacy",  "label": "Pharmacy Partner", "description": "Forward to partnered Ayurvedic pharmacy for procurement" },
+    { "id": "shipping",  "label": "Shipping Team",    "description": "Forward to shipping team if international dispatch required" }
+  ]
+}

@@ -1,0 +1,247 @@
+{
+  "stages": [
+    {
+      "id": "pracharaka_training",
+      "label": "Pracharaka Training",
+      "order": 1,
+      "owner": "Coordinator",
+      "ownerRole": "coordinator",
+      "description": "Train and onboard the Pracharaka referral partner on the Sadaika programme, referral process, commission terms, and patient selection criteria.",
+      "requiredActions": [
+        "Pracharaka profile created in system",
+        "Referral agreement reviewed and signed",
+        "Briefing on programme eligibility criteria conducted",
+        "Commission structure and payment process explained",
+        "Pracharaka assigned unique ID"
+      ],
+      "requiredDocuments": ["pracharaka_agreement"],
+      "nextActions": ["Pracharaka identifies suitable patient and initiates wish list entry"],
+      "sla": "Same day as registration",
+      "color": "blue"
+    },
+    {
+      "id": "patient_wish_list",
+      "label": "Patient Wish List",
+      "order": 2,
+      "owner": "Pracharaka / Coordinator",
+      "ownerRole": "pracharaka",
+      "description": "Referred patient is added to the Panchakarma wish list. Basic demographic details, chief complaint, and motivation are captured.",
+      "requiredActions": [
+        "Patient full name, age and gender recorded",
+        "Contact details (phone, email, city) captured",
+        "Chief complaint and health motivation documented",
+        "Preferred programme duration noted",
+        "Preferred months / dates noted",
+        "Referring Pracharaka linked to patient record",
+        "Preliminary patient ID assigned"
+      ],
+      "requiredDocuments": ["photo_id"],
+      "nextActions": ["Assign to Ayurveda doctor for astrochart eligibility assessment"],
+      "sla": "Within 24 hours of referral",
+      "color": "purple"
+    },
+    {
+      "id": "astrochart_eligibility",
+      "label": "Astrochart Eligibility",
+      "order": 3,
+      "owner": "Ayurveda Doctor",
+      "ownerRole": "ayurveda_doctor",
+      "description": "Ayurveda doctor evaluates the patient's constitutional type (Prakriti), astrological compatibility with Panchakarma timing, and renders an eligibility verdict.",
+      "requiredActions": [
+        "Patient birth date and place obtained",
+        "Prakriti (constitutional type) assessed",
+        "Astrological compatibility with Panchakarma timing evaluated",
+        "Eligibility verdict documented: Eligible / Deferred / Not Recommended",
+        "Signed astro-eligibility report uploaded"
+      ],
+      "requiredDocuments": ["astro_report"],
+      "nextActions": ["If eligible: schedule screening consultation", "If deferred: set follow-up date", "If not recommended: close case with notes"],
+      "sla": "Within 3 working days of wish list entry",
+      "color": "indigo"
+    },
+    {
+      "id": "screening_consultation",
+      "label": "Screening Consultation",
+      "order": 4,
+      "owner": "Ayurveda Doctor",
+      "ownerRole": "ayurveda_doctor",
+      "description": "Comprehensive medical review screening the patient for suitability for Panchakarma. Contraindications, current medications and baseline health are assessed.",
+      "requiredActions": [
+        "Full medical history documented",
+        "Current medications and supplements listed",
+        "Allergies and adverse reactions noted",
+        "Contraindications to Panchakarma assessed",
+        "Baseline vitals obtained",
+        "Blood investigations reviewed or requisitioned",
+        "Diabetes and hypertension flags recorded",
+        "Medical clearance signed by doctor"
+      ],
+      "requiredDocuments": ["screening_report", "blood_reports"],
+      "nextActions": ["If cleared: proceed to treatment planning", "If more info required: request additional investigations"],
+      "sla": "Within 5 working days of eligibility confirmation",
+      "color": "teal"
+    },
+    {
+      "id": "treatment_planning",
+      "label": "Treatment Planning",
+      "order": 5,
+      "owner": "Ayurveda Doctor",
+      "ownerRole": "ayurveda_doctor",
+      "description": "Ayurveda doctor formulates a personalised Panchakarma protocol specifying procedures, duration, dietary guidelines, herbal formulations and cost estimate.",
+      "requiredActions": [
+        "Panchakarma procedures selected and sequenced",
+        "Programme duration determined (14 / 21 / 28 days)",
+        "Dietary and lifestyle guidelines documented",
+        "Herbal formulation requirements listed",
+        "Estimated programme cost computed",
+        "Treatment plan document signed by doctor"
+      ],
+      "requiredDocuments": ["treatment_plan_doc"],
+      "nextActions": ["Schedule PK consultation with patient to present and sign off the treatment plan"],
+      "sla": "Within 3 working days of screening clearance",
+      "color": "green"
+    },
+    {
+      "id": "pk_consultation",
+      "label": "PK Consultation",
+      "order": 6,
+      "owner": "Ayurveda Doctor",
+      "ownerRole": "ayurveda_doctor",
+      "description": "Doctor conducts a detailed video or in-person consultation with the patient, presents the treatment plan, addresses questions, and obtains written informed consent.",
+      "requiredActions": [
+        "Consultation scheduled and confirmed with patient",
+        "Treatment plan presented and explained",
+        "Patient questions addressed",
+        "Programme dates tentatively agreed",
+        "Informed consent obtained (verbal and written)",
+        "Consultation record completed"
+      ],
+      "requiredDocuments": ["patient_consent"],
+      "nextActions": ["Coordinator to confirm reservation and collect deposit"],
+      "sla": "Within 7 days of treatment plan approval",
+      "color": "emerald"
+    },
+    {
+      "id": "reservation_fee",
+      "label": "Reservation Fee",
+      "order": 7,
+      "owner": "Coordinator",
+      "ownerRole": "coordinator",
+      "description": "Programme dates are confirmed, accommodation is allocated at the centre, and the 30% advance booking deposit is collected from the patient.",
+      "requiredActions": [
+        "Programme start and end dates confirmed with patient",
+        "Accommodation type and block allocated",
+        "30% advance deposit collected",
+        "Payment receipt issued to patient",
+        "Orientation kit prepared for dispatch"
+      ],
+      "requiredDocuments": ["payment_receipt"],
+      "nextActions": ["Set up patient portal access", "Dispatch orientation kit"],
+      "sla": "Within 48 hours of PK consultation sign-off",
+      "color": "amber"
+    },
+    {
+      "id": "patient_portal_access",
+      "label": "Patient Portal Access",
+      "order": 8,
+      "owner": "Coordinator",
+      "ownerRole": "coordinator",
+      "description": "Patient's secure portal account is created, login credentials are shared, required pre-programme forms are completed, and critical documents are uploaded.",
+      "requiredActions": [
+        "Portal account created for patient",
+        "Login credentials sent securely to patient",
+        "Patient confirms successful portal login",
+        "Treatment plan and consent uploaded to portal",
+        "Pre-programme health form completed online",
+        "Orientation kit sent to patient email"
+      ],
+      "requiredDocuments": ["orientation_acknowledgement"],
+      "nextActions": ["Patient to confirm travel arrangements and prepare for programme"],
+      "sla": "Within 3 working days of reservation confirmed",
+      "color": "orange"
+    },
+    {
+      "id": "travel_preparation",
+      "label": "Travel Preparation",
+      "order": 9,
+      "owner": "Coordinator",
+      "ownerRole": "coordinator",
+      "description": "Patient's travel itinerary is confirmed, airport / station pickup is arranged if required, and the final pre-arrival checklist is sent.",
+      "requiredActions": [
+        "Travel mode confirmed (air / rail / road)",
+        "Flight or train booking details obtained",
+        "Arrival date and time confirmed",
+        "Airport / station pickup arranged (if applicable)",
+        "Final pre-arrival checklist sent to patient"
+      ],
+      "requiredDocuments": ["travel_itinerary"],
+      "nextActions": ["Collect balance payment before programme commencement"],
+      "sla": "At least 21 days before programme start",
+      "color": "rose"
+    },
+    {
+      "id": "advance_payment",
+      "label": "Advance Payment",
+      "order": 10,
+      "owner": "Coordinator",
+      "ownerRole": "coordinator",
+      "description": "Remaining 70% programme fee is collected from the patient. Payment receipt is issued and all financial records are updated.",
+      "requiredActions": [
+        "Balance programme fee requested from patient",
+        "Payment received and verified",
+        "Payment receipt issued",
+        "Financial record updated",
+        "Programme fully confirmed to patient in writing"
+      ],
+      "requiredDocuments": ["payment_receipt"],
+      "nextActions": ["Patient arrival and formal admission at the centre"],
+      "sla": "At least 14 days before programme start",
+      "color": "red"
+    },
+    {
+      "id": "arrival_admission",
+      "label": "Arrival & Admission",
+      "order": 11,
+      "owner": "Coordinator / Centre Staff",
+      "ownerRole": "coordinator",
+      "description": "Patient arrives at the Panchakarma centre. Formal admission procedures are completed, room is allocated, therapist is assigned and Poorvakarma commences.",
+      "requiredActions": [
+        "Patient received at centre and identity verified",
+        "Admission paperwork completed",
+        "Welcome orientation conducted",
+        "Admission assessment by doctor completed",
+        "Room allocated and key handed over",
+        "Therapist assigned to patient",
+        "Programme schedule shared with patient",
+        "Safety and centre rules communicated",
+        "Emergency contact details confirmed",
+        "Poorvakarma (preparatory phase) commenced"
+      ],
+      "requiredDocuments": ["admission_form"],
+      "nextActions": ["Commence Panchakarma treatment programme"],
+      "sla": "Day 1 of programme",
+      "color": "slate"
+    },
+    {
+      "id": "panchakarma_treatment",
+      "label": "Panchakarma Treatment",
+      "order": 12,
+      "owner": "Ayurveda Doctor / Centre Staff",
+      "ownerRole": "ayurveda_doctor",
+      "description": "Patient undergoes the full Panchakarma treatment programme. Daily therapy logs are maintained, mid-programme review is conducted, and post-programme care plan is prepared.",
+      "requiredActions": [
+        "Daily therapy logs maintained",
+        "Mid-programme clinical review conducted",
+        "Treatment adjustments documented if required",
+        "Post-programme care plan prepared",
+        "Patient satisfaction survey administered",
+        "Discharge summary prepared by doctor",
+        "Pracharaka notified of programme completion"
+      ],
+      "requiredDocuments": ["qc_report"],
+      "nextActions": ["Conduct quality control review and collect patient feedback"],
+      "sla": "Programme duration (14–28 days)",
+      "color": "zinc"
+    }
+  ]
+}

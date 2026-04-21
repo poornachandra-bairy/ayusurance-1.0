@@ -1,0 +1,112 @@
+{
+  "stages": [
+    {
+      "id": "pracharaka",
+      "label": "Pracharaka Onboarding",
+      "shortLabel": "Pracharaka",
+      "description": "Enroll and verify referral partners (Pracharakas) who identify and refer prospective patients.",
+      "order": 1,
+      "color": "blue",
+      "icon": "Users"
+    },
+    {
+      "id": "wish-list",
+      "label": "Wish List Creation",
+      "shortLabel": "Wish List",
+      "description": "Patient expresses interest and is added to the Panchakarma wish list for initial assessment.",
+      "order": 2,
+      "color": "purple",
+      "icon": "ClipboardList"
+    },
+    {
+      "id": "astro-eligibility",
+      "label": "Astro-Eligibility Assessment",
+      "shortLabel": "Astro Eligibility",
+      "description": "Evaluate patient eligibility based on astrological and constitutional factors per Ayurvedic principles.",
+      "order": 3,
+      "color": "indigo",
+      "icon": "Star"
+    },
+    {
+      "id": "screening",
+      "label": "Medical Screening",
+      "shortLabel": "Screening",
+      "description": "Comprehensive medical review of patient history, conditions, and contraindications.",
+      "order": 4,
+      "color": "teal",
+      "icon": "Stethoscope"
+    },
+    {
+      "id": "treatment-plan",
+      "label": "Treatment Planning",
+      "shortLabel": "Treatment Plan",
+      "description": "Ayurveda doctor formulates personalised Panchakarma treatment protocol.",
+      "order": 5,
+      "color": "green",
+      "icon": "FileText"
+    },
+    {
+      "id": "pk-consultation",
+      "label": "Panchakarma Consultation",
+      "shortLabel": "PK Consultation",
+      "description": "Detailed consultation with the patient to finalise the treatment plan and answer questions.",
+      "order": 6,
+      "color": "emerald",
+      "icon": "MessageSquare"
+    },
+    {
+      "id": "reservation",
+      "label": "Reservation & Orientation",
+      "shortLabel": "Reservation",
+      "description": "Confirm program dates, accommodation, and provide pre-arrival orientation kit.",
+      "order": 7,
+      "color": "amber",
+      "icon": "CalendarCheck"
+    },
+    {
+      "id": "patient-portal",
+      "label": "Patient Portal Onboarding",
+      "shortLabel": "Patient Portal",
+      "description": "Set up patient's secure portal access for documents, communications and pre-program forms.",
+      "order": 8,
+      "color": "orange",
+      "icon": "Globe"
+    },
+    {
+      "id": "travel-payment",
+      "label": "Travel & Payment Confirmation",
+      "shortLabel": "Travel & Payment",
+      "description": "Confirm travel arrangements and collect program fees per the payment schedule.",
+      "order": 9,
+      "color": "rose",
+      "icon": "CreditCard"
+    },
+    {
+      "id": "admission",
+      "label": "Arrival & Admission",
+      "shortLabel": "Admission",
+      "description": "Patient arrives at the Panchakarma centre; formal admission and initial assessment completed.",
+      "order": 10,
+      "color": "red",
+      "icon": "LogIn"
+    },
+    {
+      "id": "documents",
+      "label": "Document Management",
+      "shortLabel": "Documents",
+      "description": "Centralised document repository for consents, reports, prescriptions and correspondence.",
+      "order": 11,
+      "color": "slate",
+      "icon": "FolderOpen"
+    },
+    {
+      "id": "quality-control",
+      "label": "Quality Control",
+      "shortLabel": "QC",
+      "description": "Post-program quality review, feedback collection and outcome recording.",
+      "order": 12,
+      "color": "zinc",
+      "icon": "ShieldCheck"
+    }
+  ]
+}

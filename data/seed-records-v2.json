@@ -1,0 +1,178 @@
+{
+  "wishListV2Entries": [
+    {
+      "id": "WLV2-001",
+      "pracharakaId": "PR-001",
+      "patientId": "PAT-001",
+      "data": { "fullName": "Arvind Menon", "dateOfBirth": "1973-01-01", "gender": "Male", "whatsappNumber": "+91-98400-55555", "email": "arvind.menon@example.com", "placeOfResidence": "Bangalore, Karnataka, India", "healthConcerns": "Chronic back pain" },
+      "status": "forwarded",
+      "createdAt": "2025-09-10T00:00:00Z",
+      "updatedAt": "2025-09-11T00:00:00Z",
+      "submittedAt": "2025-09-10T00:00:00Z",
+      "verifiedAt": "2025-09-11T00:00:00Z"
+    },
+    {
+      "id": "WLV2-002",
+      "pracharakaId": "PR-003",
+      "patientId": "PAT-002",
+      "data": { "fullName": "Sunita Sharma", "dateOfBirth": "1980-01-01", "gender": "Female", "whatsappNumber": "+91-99887-76655", "email": "sunita.s@ayusurance.in", "placeOfResidence": "Abu Dhabi, UAE", "healthConcerns": "Weight management" },
+      "status": "submitted",
+      "createdAt": "2025-11-01T00:00:00Z",
+      "updatedAt": "2025-11-01T00:00:00Z",
+      "submittedAt": "2025-11-01T00:00:00Z"
+    },
+    {
+      "id": "WLV2-003",
+      "pracharakaId": "PR-002",
+      "patientId": "PAT-003",
+      "data": { "fullName": "Priya Balakrishnan", "dateOfBirth": "1987-01-01", "gender": "Female", "whatsappNumber": "+91-99002-77777", "email": "priya.b@example.com", "placeOfResidence": "Chennai, Tamil Nadu, India", "healthConcerns": "PCOS" },
+      "status": "forwarded",
+      "createdAt": "2025-08-15T00:00:00Z",
+      "updatedAt": "2025-08-16T00:00:00Z",
+      "submittedAt": "2025-08-15T00:00:00Z",
+      "verifiedAt": "2025-08-16T00:00:00Z"
+    },
+    {
+      "id": "WLV2-004",
+      "pracharakaId": "PR-001",
+      "patientId": "PAT-004",
+      "data": { "fullName": "Arjun Verma", "dateOfBirth": "1964-01-01", "gender": "Male", "whatsappNumber": "+91-94470-88888", "email": "arjun.v@ayusurance.in", "placeOfResidence": "Thrissur, Kerala, India", "healthConcerns": "Arthritis" },
+      "status": "forwarded",
+      "createdAt": "2025-06-01T00:00:00Z",
+      "updatedAt": "2025-06-02T00:00:00Z",
+      "submittedAt": "2025-06-01T00:00:00Z",
+      "verifiedAt": "2025-06-02T00:00:00Z"
+    }
+  ],
+  "astroEligibilityV2Entries": [
+    {
+      "id": "AEV2-001", "patientId": "PAT-001", "wishListId": "WLV2-001", "status": "evaluation_completed",
+      "healthCycleAnalysis": "Good period for Virechana", "suitabilityPeriodStart": "2025-10-01T00:00:00Z", "suitabilityPeriodEnd": "2025-10-31T00:00:00Z",
+      "decision": "eligible", "createdAt": "2025-09-11T00:00:00Z", "updatedAt": "2025-09-12T00:00:00Z"
+    },
+    {
+      "id": "AEV2-003", "patientId": "PAT-003", "wishListId": "WLV2-003", "status": "evaluation_completed",
+      "healthCycleAnalysis": "Optimal for Basti", "suitabilityPeriodStart": "2025-09-01T00:00:00Z", "suitabilityPeriodEnd": "2025-09-30T00:00:00Z",
+      "decision": "eligible", "createdAt": "2025-08-16T00:00:00Z", "updatedAt": "2025-08-17T00:00:00Z"
+    },
+    {
+      "id": "AEV2-004", "patientId": "PAT-004", "wishListId": "WLV2-004", "status": "evaluation_completed",
+      "healthCycleAnalysis": "Good for joint therapies", "suitabilityPeriodStart": "2025-07-01T00:00:00Z", "suitabilityPeriodEnd": "2025-07-31T00:00:00Z",
+      "decision": "eligible", "createdAt": "2025-06-02T00:00:00Z", "updatedAt": "2025-06-03T00:00:00Z"
+    }
+  ],
+  "screeningV2Records": [
+    {
+      "id": "SCRV2-001", "patientId": "PAT-001", "astroRecordId": "AEV2-001", "status": "consultation_scheduled",
+      "questionnaireSubmitted": true, "documentsUploaded": true, "consentSigned": true, "disclaimerSigned": true,
+      "consultationFeePaid": true, "consultationDate": "2025-09-20T00:00:00Z", "screeningVaidyaId": "Dr. Rao",
+      "documents": [], "createdAt": "2025-09-12T00:00:00Z", "updatedAt": "2025-09-15T00:00:00Z"
+    },
+    {
+      "id": "SCRV2-003", "patientId": "PAT-003", "astroRecordId": "AEV2-003", "status": "cleared",
+      "questionnaireSubmitted": true, "documentsUploaded": true, "consentSigned": true, "disclaimerSigned": true,
+      "consultationFeePaid": true, "consultationDate": "2025-08-20T00:00:00Z", "screeningVaidyaId": "Dr. Rao", "decision": "cleared",
+      "documents": [], "createdAt": "2025-08-17T00:00:00Z", "updatedAt": "2025-08-20T00:00:00Z"
+    },
+    {
+      "id": "SCRV2-004", "patientId": "PAT-004", "astroRecordId": "AEV2-004", "status": "cleared",
+      "questionnaireSubmitted": true, "documentsUploaded": true, "consentSigned": true, "disclaimerSigned": true,
+      "consultationFeePaid": true, "consultationDate": "2025-06-20T00:00:00Z", "screeningVaidyaId": "Dr. Nair", "decision": "cleared",
+      "documents": [], "createdAt": "2025-06-03T00:00:00Z", "updatedAt": "2025-06-20T00:00:00Z"
+    }
+  ],
+  "treatmentPlanV2Records": [
+    {
+      "id": "TPV2-003", "patientId": "PAT-003", "screeningRecordId": "SCRV2-003", "status": "approved",
+      "treatingVaidyaId": "Dr. Nair",
+      "protocol": { "prakriti": "Pitta", "vikruti": "Vata", "diagnosis": "PCOS", "mainPanchakarma": "Basti", "durationDays": 21 },
+      "medicineList": [], "createdAt": "2025-08-20T00:00:00Z", "updatedAt": "2025-08-21T00:00:00Z"
+    },
+    {
+      "id": "TPV2-004", "patientId": "PAT-004", "screeningRecordId": "SCRV2-004", "status": "approved",
+      "treatingVaidyaId": "Dr. Nair",
+      "protocol": { "prakriti": "Vata", "vikruti": "Vata Kapha", "diagnosis": "Sandhigata Vata", "mainPanchakarma": "Janu Basti", "durationDays": 21 },
+      "medicineList": [], "createdAt": "2025-06-20T00:00:00Z", "updatedAt": "2025-06-21T00:00:00Z"
+    }
+  ],
+  "pkConsultationV2Records": [
+    {
+      "id": "PKCV2-003", "patientId": "PAT-003", "treatmentPlanId": "TPV2-003", "status": "completed",
+      "treatingVaidyaId": "Dr. Nair", "feePaid": true, "recordingUrl": "https://example.com/rec3",
+      "createdAt": "2025-08-21T00:00:00Z", "updatedAt": "2025-08-22T00:00:00Z"
+    },
+    {
+      "id": "PKCV2-004", "patientId": "PAT-004", "treatmentPlanId": "TPV2-004", "status": "completed",
+      "treatingVaidyaId": "Dr. Nair", "feePaid": true, "recordingUrl": "https://example.com/rec4",
+      "createdAt": "2025-06-21T00:00:00Z", "updatedAt": "2025-06-22T00:00:00Z"
+    }
+  ],
+  "reservationV2Records": [
+    {
+      "id": "RESV2-003", "patientId": "PAT-003", "pkConsultationId": "PKCV2-003", "status": "ekit_dispatched",
+      "isInternationalPatient": false, "feePaid": true,
+      "dispatchedItems": { "welcomeLetter": true, "formC": false, "instructions": true, "codeOfConduct": true, "bankDetails": true, "dosDonts": true, "visaGuidance": false, "emergencyContacts": true, "packingChecklist": true, "stayGuidelines": true, "travelInstructions": true },
+      "createdAt": "2025-08-22T00:00:00Z", "updatedAt": "2025-08-23T00:00:00Z"
+    },
+    {
+      "id": "RESV2-004", "patientId": "PAT-004", "pkConsultationId": "PKCV2-004", "status": "ekit_dispatched",
+      "isInternationalPatient": false, "feePaid": true,
+      "dispatchedItems": { "welcomeLetter": true, "formC": false, "instructions": true, "codeOfConduct": true, "bankDetails": true, "dosDonts": true, "visaGuidance": false, "emergencyContacts": true, "packingChecklist": true, "stayGuidelines": true, "travelInstructions": true },
+      "createdAt": "2025-06-22T00:00:00Z", "updatedAt": "2025-06-23T00:00:00Z"
+    }
+  ],
+  "portalOnboardingV2Records": [
+    {
+      "id": "POB-003", "patientId": "PAT-003", "reservationId": "RESV2-003", "status": "completed",
+      "credentialsSent": true, "whatsappGroupCreated": true, "orientationVideoWatched": true, "documentsUploaded": true,
+      "createdAt": "2025-08-23T00:00:00Z", "updatedAt": "2025-08-24T00:00:00Z"
+    },
+    {
+      "id": "POB-004", "patientId": "PAT-004", "reservationId": "RESV2-004", "status": "completed",
+      "credentialsSent": true, "whatsappGroupCreated": true, "orientationVideoWatched": true, "documentsUploaded": true,
+      "createdAt": "2025-06-23T00:00:00Z", "updatedAt": "2025-06-24T00:00:00Z"
+    }
+  ],
+  "travelPrepRecords": [
+    {
+      "id": "TRV-003", "patientId": "PAT-003", "portalOnboardingId": "POB-003", "isInternational": false, "status": "completed",
+      "arrivalDate": "2025-09-01T00:00:00Z", "completionItems": { "flight": true, "medicalInsurance": true, "travelInsurance": true, "pickup": true, "emergency": true, "consent": true, "formc": false, "visa": false },
+      "createdAt": "2025-08-24T00:00:00Z", "updatedAt": "2025-08-28T00:00:00Z"
+    },
+    {
+      "id": "TRV-004", "patientId": "PAT-004", "portalOnboardingId": "POB-004", "isInternational": false, "status": "completed",
+      "arrivalDate": "2025-07-01T00:00:00Z", "completionItems": { "flight": true, "medicalInsurance": true, "travelInsurance": true, "pickup": true, "emergency": true, "consent": true, "formc": false, "visa": false },
+      "createdAt": "2025-06-24T00:00:00Z", "updatedAt": "2025-06-28T00:00:00Z"
+    }
+  ],
+  "paymentRecords": [
+    {
+      "id": "PAY-003", "patientId": "PAT-003", "travelPrepId": "TRV-003", "status": "final_paid",
+      "advancePaid": true, "advanceAmountTBF": 500, "finalPaid": true, "finalAmountTBF": 2000, "finalPaidAt": "2025-09-01T00:00:00Z",
+      "createdAt": "2025-08-24T00:00:00Z", "updatedAt": "2025-09-01T00:00:00Z"
+    },
+    {
+      "id": "PAY-004", "patientId": "PAT-004", "travelPrepId": "TRV-004", "status": "final_paid",
+      "advancePaid": true, "advanceAmountTBF": 500, "finalPaid": true, "finalAmountTBF": 2000, "finalPaidAt": "2025-07-01T00:00:00Z",
+      "createdAt": "2025-06-24T00:00:00Z", "updatedAt": "2025-07-01T00:00:00Z"
+    }
+  ],
+  "arrivalAdmissionRecords": [
+    {
+      "id": "ADM-003", "patientId": "PAT-003", "paymentRecordId": "PAY-003", "isAdmitted": true, "status": "patient_enters_pk",
+      "completionItems": { "received": true, "checkinDocs": true, "consent": true, "roomAllocated": true, "scheduleConfirmed": true },
+      "createdAt": "2025-09-01T00:00:00Z", "updatedAt": "2025-09-01T00:00:00Z"
+    },
+    {
+      "id": "ADM-004", "patientId": "PAT-004", "paymentRecordId": "PAY-004", "isAdmitted": true, "status": "patient_enters_pk",
+      "completionItems": { "received": true, "checkinDocs": true, "consent": true, "roomAllocated": true, "scheduleConfirmed": true },
+      "createdAt": "2025-07-01T00:00:00Z", "updatedAt": "2025-07-01T00:00:00Z"
+    }
+  ],
+  "qualityChecklists": [
+    {
+      "id": "QC-004", "patientId": "PAT-004", "checklistItems": { "qc_stage_1::chk_1": true, "qc_stage_2::chk_2": true },
+      "createdAt": "2025-07-25T00:00:00Z", "updatedAt": "2025-07-25T00:00:00Z"
+    }
+  ]
+}

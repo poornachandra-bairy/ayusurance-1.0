@@ -1,0 +1,45 @@
+{
+  "sections": [
+    {
+      "id": "general_health",
+      "title": "General Health",
+      "fields": [
+        { "id": "current_medications", "label": "Current Medications",             "type": "textarea", "placeholder": "List all current medications, dosages, and duration..." },
+        { "id": "chronic_conditions",  "label": "Chronic Conditions / Diagnoses", "type": "textarea", "placeholder": "List any diagnosed chronic conditions..." },
+        { "id": "past_surgeries",      "label": "Past Surgeries / Procedures",    "type": "textarea", "placeholder": "Include year, type of surgery, and outcome..." },
+        { "id": "allergies",           "label": "Known Allergies",                "type": "text",     "placeholder": "Drug, food, environmental, or other allergies..." }
+      ]
+    },
+    {
+      "id": "lifestyle",
+      "title": "Lifestyle & Diet",
+      "fields": [
+        { "id": "diet_type",         "label": "Diet Type",            "type": "select",   "options": ["Vegetarian", "Vegan", "Non-Vegetarian", "Sattvic", "Other"] },
+        { "id": "exercise_routine",  "label": "Exercise Routine",     "type": "text",     "placeholder": "Weekly routine — yoga, walking, gym, etc." },
+        { "id": "sleep_pattern",     "label": "Sleep Pattern",        "type": "text",     "placeholder": "Hours per night, quality, disturbances..." },
+        { "id": "stress_level",      "label": "Stress Level (1–10)",  "type": "text",     "placeholder": "Self-rated current stress level..." },
+        { "id": "substance_use",     "label": "Alcohol / Tobacco use","type": "select",   "options": ["None", "Occasional", "Regular"] }
+      ]
+    },
+    {
+      "id": "ayurveda_history",
+      "title": "Ayurveda & Treatment History",
+      "fields": [
+        { "id": "previous_pk",           "label": "Previous Panchakarma Treatments", "type": "textarea", "placeholder": "Where, when, which procedures, outcomes..." },
+        { "id": "ayurveda_routine",      "label": "Current Ayurveda Routines",       "type": "textarea", "placeholder": "Herbs, oils, Dinacharya practices currently followed..." },
+        { "id": "treating_vaidya",       "label": "Current / Previous Treating Vaidya", "type": "text", "placeholder": "Name and location..." }
+      ]
+    },
+    {
+      "id": "contraindications",
+      "title": "Contraindication Screening",
+      "fields": [
+        { "id": "pregnancy_status",   "label": "Pregnancy / Breastfeeding", "type": "select", "options": ["Not Applicable", "Pregnant", "Breastfeeding"] },
+        { "id": "cardiac_conditions", "label": "Cardiac Conditions",        "type": "select", "options": ["None", "Hypertension", "History of Heart Disease", "Arrhythmia", "Other"] },
+        { "id": "active_infections",  "label": "Active Infections / Fever", "type": "select", "options": ["None", "Currently Active", "Recent (within 3 months)"] },
+        { "id": "autoimmune",         "label": "Autoimmune Conditions",     "type": "select", "options": ["None", "Diagnosed — Managed", "Diagnosed — Active Flare"] },
+        { "id": "mental_health",      "label": "Mental Health Conditions",  "type": "text",   "placeholder": "Any diagnosed mental health conditions, medications..." }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,198 @@
+{
+  "processSteps": [
+    {
+      "step": 1,
+      "stageId": "pracharaka",
+      "title": "Pracharaka Registration",
+      "actor": "Coordinator",
+      "actions": [
+        "Collect Pracharaka details (name, contact, area of operation)",
+        "Verify identity and credentials",
+        "Sign referral agreement",
+        "Assign Pracharaka ID",
+        "Brief on referral process and commission structure"
+      ],
+      "outputs": ["Pracharaka profile created", "Agreement signed"],
+      "sla": "Same day"
+    },
+    {
+      "step": 2,
+      "stageId": "wish-list",
+      "title": "Wish List Entry",
+      "actor": "Pracharaka / Coordinator",
+      "actions": [
+        "Collect patient basic demographics",
+        "Record primary health concern and motivation",
+        "Document Pracharaka who referred",
+        "Assign preliminary patient ID",
+        "Set initial wishlist status"
+      ],
+      "outputs": ["Wish list record created", "Patient notified of receipt"],
+      "sla": "Within 24 hours of referral"
+    },
+    {
+      "step": 3,
+      "stageId": "astro-eligibility",
+      "title": "Astro-Eligibility Assessment",
+      "actor": "Ayurveda Doctor",
+      "actions": [
+        "Review patient birth details",
+        "Assess constitutional type (Prakriti)",
+        "Evaluate astrological compatibility with Panchakarma timing",
+        "Document assessment findings",
+        "Render eligibility verdict: Eligible / Deferred / Not Recommended"
+      ],
+      "outputs": ["Astro-eligibility report", "Stage status updated"],
+      "sla": "Within 3 working days"
+    },
+    {
+      "step": 4,
+      "stageId": "screening",
+      "title": "Medical Screening",
+      "actor": "Ayurveda Doctor / Coordinator",
+      "actions": [
+        "Collect full medical history",
+        "Review current medications and supplements",
+        "Identify contraindications to Panchakarma",
+        "Obtain baseline vitals",
+        "Request additional investigations if required",
+        "Confirm medical clearance"
+      ],
+      "outputs": [
+        "Screening record",
+        "Medical clearance status",
+        "Investigation requests (if any)"
+      ],
+      "sla": "Within 5 working days"
+    },
+    {
+      "step": 5,
+      "stageId": "treatment-plan",
+      "title": "Treatment Plan Formulation",
+      "actor": "Ayurveda Doctor",
+      "actions": [
+        "Select appropriate Panchakarma procedures",
+        "Define duration and sequencing",
+        "Specify Ayurvedic diet and lifestyle guidelines",
+        "Document herbal formulation requirements",
+        "Prepare preliminary cost estimate"
+      ],
+      "outputs": ["Signed treatment plan document"],
+      "sla": "Within 3 working days of screening clearance"
+    },
+    {
+      "step": 6,
+      "stageId": "pk-consultation",
+      "title": "Panchakarma Consultation",
+      "actor": "Ayurveda Doctor",
+      "actions": [
+        "Conduct video or in-person consultation with patient",
+        "Explain treatment plan in detail",
+        "Address patient questions",
+        "Obtain verbal and written informed consent",
+        "Confirm program timing"
+      ],
+      "outputs": [
+        "Consultation record",
+        "Informed consent obtained",
+        "Program dates tentatively agreed"
+      ],
+      "sla": "Within 7 days of treatment plan approval"
+    },
+    {
+      "step": 7,
+      "stageId": "reservation",
+      "title": "Reservation & Orientation",
+      "actor": "Coordinator",
+      "actions": [
+        "Confirm program start and end dates",
+        "Allocate accommodation at centre",
+        "Collect advance booking deposit",
+        "Send orientation kit to patient",
+        "Share pre-arrival guidelines and packing list"
+      ],
+      "outputs": [
+        "Reservation confirmation letter",
+        "Orientation kit dispatched",
+        "Deposit receipt"
+      ],
+      "sla": "Within 48 hours of consultation sign-off"
+    },
+    {
+      "step": 8,
+      "stageId": "patient-portal",
+      "title": "Patient Portal Onboarding",
+      "actor": "Coordinator",
+      "actions": [
+        "Create patient portal account",
+        "Share login credentials securely",
+        "Upload treatment plan and consent to portal",
+        "Guide patient to complete pre-program forms online",
+        "Verify portal access confirmed by patient"
+      ],
+      "outputs": [
+        "Portal account active",
+        "Pre-program forms completed",
+        "Documents uploaded"
+      ],
+      "sla": "Within 3 days of reservation confirmed"
+    },
+    {
+      "step": 9,
+      "stageId": "travel-payment",
+      "title": "Travel & Payment Confirmation",
+      "actor": "Coordinator",
+      "actions": [
+        "Confirm travel itinerary (flight / train details)",
+        "Arrange airport / station pickup if applicable",
+        "Collect balance program fee",
+        "Issue payment receipt",
+        "Send final pre-arrival checklist"
+      ],
+      "outputs": [
+        "Payment fully settled",
+        "Travel details on file",
+        "Pickup arranged"
+      ],
+      "sla": "At least 14 days before program start"
+    },
+    {
+      "step": 10,
+      "stageId": "admission",
+      "title": "Arrival & Admission",
+      "actor": "Coordinator / Centre Staff",
+      "actions": [
+        "Receive patient at centre",
+        "Complete admission paperwork",
+        "Conduct admission assessment by doctor",
+        "Assign treatment room and therapist",
+        "Commence Poorvakarma (preparatory phase)"
+      ],
+      "outputs": [
+        "Admission record",
+        "Poorvakarma commenced",
+        "Program schedule shared with patient"
+      ],
+      "sla": "Day 1 of program"
+    },
+    {
+      "step": 11,
+      "stageId": "quality-control",
+      "title": "Quality Control & Feedback",
+      "actor": "Coordinator / Ayurveda Doctor",
+      "actions": [
+        "Conduct mid-program review",
+        "Collect patient feedback post-program",
+        "Record clinical outcomes",
+        "Review Pracharaka referral quality",
+        "Document learnings and improvements"
+      ],
+      "outputs": [
+        "QC checklist completed",
+        "Patient feedback recorded",
+        "Outcome report"
+      ],
+      "sla": "Within 7 days of program completion"
+    }
+  ]
+}

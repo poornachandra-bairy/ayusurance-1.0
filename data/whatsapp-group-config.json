@@ -1,0 +1,14 @@
+{
+  "groupPurposes": [
+    { "id": "travel_updates",       "label": "Travel Updates",        "description": "Share flight details, ETA, and travel changes" },
+    { "id": "arrival_coordination", "label": "Arrival Coordination",  "description": "Coordinate pickup, check-in, and welcome logistics" },
+    { "id": "instructions",         "label": "Instructions",          "description": "Pre-arrival and day-of instructions for patient" },
+    { "id": "queries",              "label": "Queries",               "description": "Patient questions and coordinator responses" }
+  ],
+  "members": [
+    { "id": "patient",                 "label": "Patient",                   "mandatory": true },
+    { "id": "treating_vaidya",         "label": "Treating Vaidya",           "mandatory": true },
+    { "id": "aco",                     "label": "ACO (Centre Organiser)",     "mandatory": true },
+    { "id": "ayusurance_coordinator",  "label": "Ayusurance Coordinator",    "mandatory": true }
+  ]
+}

@@ -1,0 +1,100 @@
+{
+  "milestones": [
+    {
+      "id": "application_received",
+      "order": 1,
+      "label": "Application Received",
+      "description": "Pracharaka application form received and logged in the system.",
+      "owner": "Coordinator",
+      "requiredFor": "registration"
+    },
+    {
+      "id": "eligibility_verified",
+      "order": 2,
+      "label": "Eligibility Verified",
+      "description": "Applicant's eligibility category confirmed and background review completed.",
+      "owner": "Coordinator",
+      "requiredFor": "registration"
+    },
+    {
+      "id": "certification_fee_paid",
+      "order": 3,
+      "label": "Certification Fee Paid",
+      "description": "SHIVA Pracharaka certification course fee received and receipt issued.",
+      "owner": "Coordinator",
+      "requiredFor": "certification"
+    },
+    {
+      "id": "training_commenced",
+      "order": 4,
+      "label": "Training Commenced",
+      "description": "Pracharaka has begun the SHIVA certification course modules.",
+      "owner": "Pracharaka",
+      "requiredFor": "certification"
+    },
+    {
+      "id": "live_sessions_attended",
+      "order": 5,
+      "label": "Live Sessions Attended",
+      "description": "All required live training sessions with Vaidya Satyajith's students completed.",
+      "owner": "Pracharaka",
+      "requiredFor": "certification"
+    },
+    {
+      "id": "recorded_modules_completed",
+      "order": 6,
+      "label": "Recorded Modules Completed",
+      "description": "All recorded training modules and SHIVA Ayurveda awareness course completed.",
+      "owner": "Pracharaka",
+      "requiredFor": "certification"
+    },
+    {
+      "id": "assessment_passed",
+      "order": 7,
+      "label": "Assessment Passed",
+      "description": "End-of-course assessment or competency check passed satisfactorily.",
+      "owner": "Pracharaka",
+      "requiredFor": "certification"
+    },
+    {
+      "id": "certification_issued",
+      "order": 8,
+      "label": "SHIVA Certification Issued",
+      "description": "Official SHIVA Pracharaka certification issued with a unique certification number.",
+      "owner": "Coordinator",
+      "requiredFor": "platform_registration"
+    },
+    {
+      "id": "pracharaka_id_assigned",
+      "order": 9,
+      "label": "Pracharaka ID Assigned",
+      "description": "Unique Pracharaka ID assigned and recorded in the Ayusurance platform.",
+      "owner": "Coordinator",
+      "requiredFor": "platform_registration"
+    },
+    {
+      "id": "ayusurance_registered",
+      "order": 10,
+      "label": "Registered on Ayusurance Platform",
+      "description": "Pracharaka profile formally created and activated on the Ayusurance operations platform.",
+      "owner": "Coordinator",
+      "requiredFor": "active_referral"
+    },
+    {
+      "id": "referral_formats_provided",
+      "order": 11,
+      "label": "Referral Formats Provided",
+      "description": "Standard referral templates, checklists, and communication formats handed over to the Pracharaka.",
+      "owner": "Coordinator",
+      "requiredFor": "active_referral"
+    },
+    {
+      "id": "communication_group_added",
+      "order": 12,
+      "label": "Added to Communication Group",
+      "description": "Pracharaka added to the Ayusurance Pracharaka WhatsApp or communication group for ongoing updates.",
+      "owner": "Coordinator",
+      "requiredFor": "active_referral"
+    }
+  ]
+}

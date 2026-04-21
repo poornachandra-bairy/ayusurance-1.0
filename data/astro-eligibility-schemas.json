@@ -1,0 +1,53 @@
+{
+  "astroStatuses": [
+    { "id": "pending_preparation", "label": "Pending Preparation" },
+    { "id": "analysis_in_progress", "label": "Analysis In Progress" },
+    { "id": "evaluation_completed", "label": "Evaluation Completed" }
+  ],
+  "decisionLabels": [
+    { "id": "pending", "label": "Pending" },
+    { "id": "requires_review", "label": "Requires Review" },
+    { "id": "eligible", "label": "Eligible" },
+    { "id": "not_immediately_eligible", "label": "Not Immediately Eligible" }
+  ],
+  "advisoryTemplates": [
+    {
+      "id": "planetary_dasha_conflict",
+      "title": "Planetary Dasha Conflict",
+      "content": "Current major planetary period (Mahadasha/Antardasha) poses challenges for deep detoxification. Recommended to wait until next favorable transit."
+    },
+    {
+      "id": "weak_prana_vitality",
+      "title": "Low Pranic Vitality",
+      "content": "The chart indicates depleted vital force (Prana Ojas) at this time. Aggressive Shodhana (detoxification) is contraindicated. Gentle Brihmana (nourishing) therapy is advised first."
+    },
+    {
+      "id": "seasonal_mismatch",
+      "title": "Unfavorable Seasonal Transit",
+      "content": "The requested timeframe coincides with unfavorable seasonal transitions for the individual's constitution. Deferment to the recommended optimal window is necessary to prevent aggravation."
+    }
+  ],
+  "preparatoryPlanTemplates": [
+    {
+      "id": "agni_deepana",
+      "title": "Agni Deepana & Ama Pachana",
+      "content": "Focus on kindling digestive fire and digesting metabolic waste. Follow a light, warm, cooked diet (Kitchari protocol). Drink warm water with cumin, coriander, and fennel. Avoid all dairy, cold foods, and raw salads for 4 weeks."
+    },
+    {
+      "id": "rasayana_nourishment",
+      "title": "Pre-Detox Rasayana",
+      "content": "Build strength prior to treatment. Take Ashwagandha and Shatavari with warm milk. Ensure 8 hours of sleep. Daily gentle yoga and Pranayama. Resume contact in 3 months for re-evaluation."
+    }
+  ],
+  "communicationTypes": [
+    { "id": "patient_whatsapp", "label": "Patient via WhatsApp" },
+    { "id": "patient_email", "label": "Patient via Email" },
+    { "id": "pracharaka_notification", "label": "Pracharaka Notification" },
+    { "id": "team_update", "label": "Sadaika/Ayusurance Team" }
+  ],
+  "consultingVaidyas": [
+    { "id": "VDY-001", "name": "Vaidya Satyajith" },
+    { "id": "VDY-002", "name": "Vaidya Anjali" },
+    { "id": "VDY-003", "name": "Vaidya Rajesh" }
+  ]
+}

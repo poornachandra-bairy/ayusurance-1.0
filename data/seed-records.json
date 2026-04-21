@@ -1,0 +1,172 @@
+{
+  "pracharakas": [
+    {
+      "id": "PR-001",
+      "name": "Ramesh Nair",
+      "phone": "+91-98450-11111",
+      "email": "ramesh.nair@example.com",
+      "city": "Kochi",
+      "state": "Kerala",
+      "joinedDate": "2025-01-15",
+      "status": "active",
+      "totalReferrals": 4,
+      "agreementSigned": true
+    },
+    {
+      "id": "PR-002",
+      "name": "Sunita Sharma",
+      "phone": "+91-99102-22222",
+      "email": "sunita.sharma@example.com",
+      "city": "Pune",
+      "state": "Maharashtra",
+      "joinedDate": "2025-03-02",
+      "status": "active",
+      "totalReferrals": 2,
+      "agreementSigned": true
+    },
+    {
+      "id": "PR-003",
+      "name": "Sanjeev Kumar",
+      "phone": "+91-98765-43210",
+      "email": "sanjeev.kumar@example.in",
+      "city": "Dubai",
+      "state": "UAE",
+      "joinedDate": "2025-06-10",
+      "status": "pending_verification",
+      "totalReferrals": 0,
+      "agreementSigned": false
+    }
+  ],
+  "patients": [
+    {
+      "id": "PAT-001",
+      "name": "Arvind Menon",
+      "age": 52,
+      "gender": "Male",
+      "phone": "+91-98400-55555",
+      "email": "arvind.menon@example.com",
+      "city": "Bangalore",
+      "state": "Karnataka",
+      "pracharakaId": "PR-001",
+      "currentStage": "treatment-plan",
+      "createdAt": "2025-09-10",
+      "updatedAt": "2025-11-20",
+      "chiefComplaint": "Chronic back pain, stress, insomnia"
+    },
+    {
+      "id": "PAT-002",
+      "name": "Sunita Sharma",
+      "age": 45,
+      "gender": "Female",
+      "phone": "+91-99887-76655",
+      "email": "sunita.sharma@example.in",
+      "city": "Abu Dhabi",
+      "state": "UAE",
+      "pracharakaId": "PR-003",
+      "currentStage": "wish-list",
+      "createdAt": "2025-11-01",
+      "updatedAt": "2025-11-05",
+      "chiefComplaint": "Weight management, digestive issues"
+    },
+    {
+      "id": "PAT-003",
+      "name": "Priya Balakrishnan",
+      "age": 38,
+      "gender": "Female",
+      "phone": "+91-99002-77777",
+      "email": "priya.b@example.com",
+      "city": "Chennai",
+      "state": "Tamil Nadu",
+      "pracharakaId": "PR-002",
+      "currentStage": "admission",
+      "createdAt": "2025-08-15",
+      "updatedAt": "2025-11-28",
+      "chiefComplaint": "PCOS management, hormonal balance"
+    },
+    {
+      "id": "PAT-004",
+      "name": "Arjun Verma",
+      "age": 61,
+      "gender": "Male",
+      "phone": "+91-94470-88888",
+      "email": "arjun.verma@example.in",
+      "city": "Thrissur",
+      "state": "Kerala",
+      "pracharakaId": "PR-001",
+      "currentStage": "quality-control",
+      "createdAt": "2025-06-01",
+      "updatedAt": "2025-11-30",
+      "chiefComplaint": "Arthritis, mobility, diabetes management"
+    }
+  ],
+  "wishListEntries": [
+    {
+      "id": "WL-001",
+      "patientId": "PAT-001",
+      "status": "advanced",
+      "motivation": "Seeking natural treatment for chronic back pain and stress relief",
+      "programDuration": 21,
+      "preferredMonths": ["January", "February"],
+      "notes": "Has tried allopathic treatments without sustained relief",
+      "createdAt": "2025-09-10"
+    },
+    {
+      "id": "WL-002",
+      "patientId": "PAT-002",
+      "status": "new",
+      "motivation": "Weight management and Ayurvedic detox",
+      "programDuration": 14,
+      "preferredMonths": ["March"],
+      "notes": "NRI - will travel from UAE",
+      "createdAt": "2025-11-01"
+    }
+  ],
+  "screeningRecords": [
+    {
+      "id": "SCR-001",
+      "patientId": "PAT-001",
+      "doctorId": "DOC-001",
+      "status": "cleared",
+      "dateCompleted": "2025-10-05",
+      "medicalHistory": "Type 2 Diabetes (controlled), L4-L5 disc herniation",
+      "currentMedications": ["Metformin 500mg", "Vitamin D3"],
+      "allergies": "None known",
+      "contraindications": "None",
+      "clearanceNotes": "Cleared for Panchakarma with dietary modifications for diabetes",
+      "checklistItems": {
+        "sc_01": true, "sc_02": true, "sc_03": true, "sc_04": true,
+        "sc_05": true, "sc_06": true, "sc_07": false, "sc_08": true,
+        "sc_09": true, "sc_10": true, "sc_11": true, "sc_12": false, "sc_13": true
+      }
+    }
+  ],
+  "operationalAlerts": [
+    {
+      "id": "ALERT-001",
+      "type": "action_required",
+      "message": "PAT-002 (Sunita Sharma) has been on Wish List for 21 days without Astro-Eligibility assessment.",
+      "patientId": "PAT-002",
+      "stageId": "wish-list",
+      "priority": "high",
+      "createdAt": "2025-11-22"
+    },
+    {
+      "id": "ALERT-002",
+      "type": "payment_pending",
+      "message": "PAT-001 (Arvind Menon) balance payment due in 5 days.",
+      "patientId": "PAT-001",
+      "stageId": "travel-payment",
+      "priority": "medium",
+      "createdAt": "2025-11-25"
+    },
+    {
+      "id": "ALERT-003",
+      "type": "document_missing",
+      "message": "PR-003 (Sanjeev Kumar) Pracharaka Agreement not yet signed.",
+      "pracharakaId": "PR-003",
+      "stageId": "pracharaka",
+      "priority": "medium",
+      "createdAt": "2025-11-01"
+    }
+  ]
+}
