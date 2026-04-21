@@ -988,14 +988,14 @@ function appReducer(state: AppState, action: AppAction): AppState {
             if (wf.patientId !== scr.patientId) return wf;
             return {
               ...wf,
-              currentWorkflowStageId: "treatment_planning" as import("@/lib/types/workflow").WorkflowStageId,
+              currentWorkflowStageId: "treatment_planning" as WorkflowStageId,
               stages: {
                 ...wf.stages,
                 screening_consultation: { ...wf.stages["screening_consultation"], status: "completed" as StageStatus, completedAt: ts, notes: "Screening approved." },
-                treatment_planning: { stageId: "treatment_planning", status: "in_progress" as StageStatus, startedAt: ts },
+                treatment_planning: { stageId: "treatment_planning" as WorkflowStageId, status: "in_progress" as StageStatus, startedAt: ts },
               },
               updatedAt: ts,
-            };
+            } as PatientWorkflowRecord;
           })
         : state.workflowRecords;
 
@@ -1058,14 +1058,14 @@ function appReducer(state: AppState, action: AppAction): AppState {
         if (wf.patientId !== plan.patientId) return wf;
         return {
           ...wf,
-          currentWorkflowStageId: "pk_consultation" as import("@/lib/types/workflow").WorkflowStageId,
+          currentWorkflowStageId: "pk_consultation" as WorkflowStageId,
           stages: {
             ...wf.stages,
             treatment_planning: { ...wf.stages["treatment_planning"], status: "completed" as StageStatus, completedAt: ts },
-            pk_consultation: { stageId: "pk_consultation", status: "in_progress" as StageStatus, startedAt: ts },
+            pk_consultation: { stageId: "pk_consultation" as WorkflowStageId, status: "in_progress" as StageStatus, startedAt: ts },
           },
           updatedAt: ts,
-        };
+        } as PatientWorkflowRecord;
       });
 
       return {
@@ -1123,14 +1123,14 @@ function appReducer(state: AppState, action: AppAction): AppState {
         if (wf.patientId !== consult.patientId) return wf;
         return {
           ...wf,
-          currentWorkflowStageId: "reservation_fee" as import("@/lib/types/workflow").WorkflowStageId,
+          currentWorkflowStageId: "reservation_fee" as WorkflowStageId,
           stages: {
             ...wf.stages,
             pk_consultation: { ...wf.stages["pk_consultation"], status: "completed" as StageStatus, completedAt: ts },
-            reservation_fee: { stageId: "reservation_fee", status: "in_progress" as StageStatus, startedAt: ts },
+            reservation_fee: { stageId: "reservation_fee" as WorkflowStageId, status: "in_progress" as StageStatus, startedAt: ts },
           },
           updatedAt: ts,
-        };
+        } as PatientWorkflowRecord;
       });
 
       return {
@@ -1192,14 +1192,14 @@ function appReducer(state: AppState, action: AppAction): AppState {
         if (wf.patientId !== res.patientId) return wf;
         return {
           ...wf,
-          currentWorkflowStageId: "patient_portal_access" as import("@/lib/types/workflow").WorkflowStageId,
+          currentWorkflowStageId: "patient_portal_access" as WorkflowStageId,
           stages: {
             ...wf.stages,
             reservation_fee: { ...wf.stages["reservation_fee"], status: "completed" as StageStatus, completedAt: ts },
-            patient_portal_access: { stageId: "patient_portal_access", status: "in_progress" as StageStatus, startedAt: ts },
+            patient_portal_access: { stageId: "patient_portal_access" as WorkflowStageId, status: "in_progress" as StageStatus, startedAt: ts },
           },
           updatedAt: ts,
-        };
+        } as PatientWorkflowRecord;
       });
 
       return {
@@ -1273,14 +1273,14 @@ function appReducer(state: AppState, action: AppAction): AppState {
         if (wf.patientId !== pob.patientId) return wf;
         return {
           ...wf,
-          currentWorkflowStageId: "travel_preparation" as import("@/lib/types/workflow").WorkflowStageId,
+          currentWorkflowStageId: "travel_preparation" as WorkflowStageId,
           stages: {
             ...wf.stages,
             patient_portal_access: { ...wf.stages["patient_portal_access"], status: "completed" as StageStatus, completedAt: ts },
-            travel_preparation: { stageId: "travel_preparation", status: "in_progress" as StageStatus, startedAt: ts },
+            travel_preparation: { stageId: "travel_preparation" as WorkflowStageId, status: "in_progress" as StageStatus, startedAt: ts },
           },
           updatedAt: ts,
-        };
+        } as PatientWorkflowRecord;
       });
 
       return {
@@ -1344,14 +1344,14 @@ function appReducer(state: AppState, action: AppAction): AppState {
         if (wf.patientId !== trv.patientId) return wf;
         return {
           ...wf,
-          currentWorkflowStageId: "advance_payment" as import("@/lib/types/workflow").WorkflowStageId,
+          currentWorkflowStageId: "advance_payment" as WorkflowStageId,
           stages: {
             ...wf.stages,
             travel_preparation: { ...wf.stages["travel_preparation"], status: "completed" as StageStatus, completedAt: ts },
-            advance_payment: { stageId: "advance_payment", status: "in_progress" as StageStatus, startedAt: ts },
+            advance_payment: { stageId: "advance_payment" as WorkflowStageId, status: "in_progress" as StageStatus, startedAt: ts },
           },
           updatedAt: ts,
-        };
+        } as PatientWorkflowRecord;
       });
       return {
         ...state,
@@ -1468,14 +1468,14 @@ function appReducer(state: AppState, action: AppAction): AppState {
         if (wf.patientId !== adm.patientId) return wf;
         return {
           ...wf,
-          currentWorkflowStageId: "panchakarma_treatment" as import("@/lib/types/workflow").WorkflowStageId,
+          currentWorkflowStageId: "panchakarma_treatment" as WorkflowStageId,
           stages: {
             ...wf.stages,
             arrival_admission: { ...wf.stages["arrival_admission"], status: "completed" as StageStatus, completedAt: ts },
-            panchakarma_treatment: { stageId: "panchakarma_treatment", status: "in_progress" as StageStatus, startedAt: ts },
+            panchakarma_treatment: { stageId: "panchakarma_treatment" as WorkflowStageId, status: "in_progress" as StageStatus, startedAt: ts },
           },
           updatedAt: ts,
-        };
+        } as PatientWorkflowRecord;
       });
       return {
         ...state,
