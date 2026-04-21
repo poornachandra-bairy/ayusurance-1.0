@@ -89,7 +89,8 @@ export function useAppStore() {
   // ── Phase 1 generic dispatcher ─────────────────────────────
   function set<K extends AppAction["type"]>(
     type: K,
-    payload: Extract<AppAction, { type: K }>["payload"]
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    payload: any
   ) {
     // @ts-expect-error dynamic dispatch
     dispatch({ type, payload });

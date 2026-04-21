@@ -265,8 +265,8 @@ export function PatientSummaryPage() {
               <div key={log.id} className="flex gap-3 rounded border border-slate-100 bg-slate-50 px-3 py-2">
                 <span className="shrink-0 w-22 text-[10px] text-slate-400 leading-tight pt-0.5">{formatDate(log.timestamp)}</span>
                 <div>
-                  <span className="text-[10px] font-semibold text-slate-500">{log.actor}</span>
-                  <p className="text-xs text-slate-700 mt-0.5">{log.summary}</p>
+                  <span className="text-[10px] font-semibold text-slate-500">{log.role}</span>
+                  <p className="text-xs text-slate-700 mt-0.5">{log.message}</p>
                 </div>
               </div>
             ))}
