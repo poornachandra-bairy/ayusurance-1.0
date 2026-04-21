@@ -43,7 +43,10 @@ export function QCDetailPage() {
   const [npsScore,        setNPSScore]        = useState(feedback?.npsScore ?? 0);
   const [wouldRecommend,  setWouldRecommend]  = useState(feedback?.wouldRecommend ?? false);
   const [testimonial,     setTestimonial]     = useState(feedback?.testimonial ?? "");
-  const [ratings, setRatings] = useState<Record<string, number>>(feedback?.ratings ?? {
+  const [ratings, setRatings] = useState<{
+    preArrivalCommunication: number; centreHygiene: number; therapistSkill: number;
+    foodQuality: number; doctorAttention: number; valueForMoney: number;
+  }>(feedback?.ratings ?? {
     preArrivalCommunication: 0, centreHygiene: 0, therapistSkill: 0,
     foodQuality: 0, doctorAttention: 0, valueForMoney: 0,
   });
@@ -304,11 +307,11 @@ export function QCDetailPage() {
                   <div className="shrink-0 w-24 text-[10px] text-slate-400 leading-tight pt-0.5">{formatDate(log.timestamp)}</div>
                   <div className="flex-1">
                     <div className="flex items-center gap-2">
-                      <span className="text-[10px] font-semibold text-slate-500">{log.actor}</span>
+                      <span className="text-[10px] font-semibold text-slate-500">{log.role}</span>
                       <span className={cn("text-[10px] rounded px-1 py-0.5",
-                        (log as any).isAudit ? "bg-amber-100 text-amber-700" : "bg-slate-200 text-slate-600")}>{log.type}</span>
+                        (log as any).isAudit ? "bg-amber-100 text-amber-700" : "bg-slate-200 text-slate-600")}>{log.noteType}</span>
                     </div>
-                    <p className="text-xs text-slate-700 mt-0.5">{log.summary}</p>
+                    <p className="text-xs text-slate-700 mt-0.5">{log.message}</p>
                   </div>
                 </div>
               ))}
