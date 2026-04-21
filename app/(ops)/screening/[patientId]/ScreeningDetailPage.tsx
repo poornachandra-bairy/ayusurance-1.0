@@ -166,7 +166,7 @@ export function ScreeningDetailPage() {
       durationMinutes: 30 as const,
       participants: participantRoles.roles.map((r) => ({
         role: r.id as any,
-        name: r.id === "patient" ? patient.name : r.id === "pracharaka" ? pr?.name : undefined,
+        name: r.id === "patient" ? patient?.name : r.id === "pracharaka" ? pr?.name : undefined,
         confirmed: true,
       })),
       recordingDone:               isInit ? initRecorded : fuRecorded,
