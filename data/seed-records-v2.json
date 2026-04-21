@@ -160,11 +160,13 @@
   "arrivalAdmissionRecords": [
     {
       "id": "ADM-003", "patientId": "PAT-003", "paymentRecordId": "PAY-003", "isAdmitted": true, "status": "patient_enters_pk",
+      "roomNumber": "B-204", "scheduleConfirmed": true, "consentSigned": true,
       "completionItems": { "received": true, "checkinDocs": true, "consent": true, "roomAllocated": true, "scheduleConfirmed": true },
       "createdAt": "2025-09-01T00:00:00Z", "updatedAt": "2025-09-01T00:00:00Z"
     },
     {
       "id": "ADM-004", "patientId": "PAT-004", "paymentRecordId": "PAY-004", "isAdmitted": true, "status": "patient_enters_pk",
+      "roomNumber": "A-108", "scheduleConfirmed": true, "consentSigned": true,
       "completionItems": { "received": true, "checkinDocs": true, "consent": true, "roomAllocated": true, "scheduleConfirmed": true },
       "createdAt": "2025-07-01T00:00:00Z", "updatedAt": "2025-07-01T00:00:00Z"
     }

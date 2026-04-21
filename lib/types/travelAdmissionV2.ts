@@ -76,6 +76,9 @@ export interface ArrivalAdmissionRecord {
   admissionChecklist: AdmissionChecklistItem[];
   admittedAt?: string;          // ISO — when officially admitted to PK program
   acoName?: string;
+  roomNumber?: string;
+  scheduleConfirmed?: boolean;
+  consentSigned?: boolean;
 
   isAdmitted: boolean;
   createdAt: string;
