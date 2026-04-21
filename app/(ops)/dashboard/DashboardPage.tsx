@@ -80,7 +80,7 @@ export function DashboardPage() {
   const pendingPortal = portalOnboardingV2Records.filter((p) => p.status !== "completed").length;
   const pendingTravel = travelPrepRecords.filter((t) => !t.isComplete).length;
   const admitted      = arrivalAdmissionRecords.filter((a) => a.isAdmitted).length;
-  const pendingQC     = qualityChecklists.filter((q) => q.status !== "completed").length;
+  const pendingQC     = qualityChecklists.filter((q) => q.status !== "closed").length;
 
   // Role-specific views
   if (role === "pracharaka") {
