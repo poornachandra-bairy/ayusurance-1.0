@@ -5,7 +5,7 @@ import { useParams } from "next/navigation";
 import Link from "next/link";
 import { useAppStore } from "@/lib/store/useAppStore";
 import { PageHeader } from "@/app/components/shell/PageHeader";
-import type { PaymentMode } from "@/lib/types/reservationV2";
+import type { PaymentMode, WhatsAppGroupMemberStatus } from "@/lib/types/reservationV2";
 import feeConfig        from "@/data/reservation-fee-config.json";
 import ekitData         from "@/data/ekit-contents.json";
 import portalChecklist  from "@/data/portal-onboarding-checklist.json";
@@ -106,7 +106,7 @@ export function ReservationDetailPage() {
   const [portalItems,   setPortalItems]   = useState<Record<string, boolean>>(pob?.portalItems ?? {});
   const [waCreated,     setWaCreated]     = useState(pob?.whatsappGroupCreated ?? false);
   const [waGroupName,   setWaGroupName]   = useState(pob?.whatsappGroupName ?? "");
-  const [waMembers,     setWaMembers]     = useState(
+  const [waMembers,     setWaMembers]     = useState<WhatsAppGroupMemberStatus[]>(
     pob?.whatsappMembers ?? waGroupConfig.members.map((m) => ({ memberId: m.id, added: false }))
   );
   const [portalSaved,   setPortalSaved]   = useState(false);
