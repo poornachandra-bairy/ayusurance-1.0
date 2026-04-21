@@ -5,7 +5,7 @@ import { useParams } from "next/navigation";
 import Link from "next/link";
 import { useAppStore } from "@/lib/store/useAppStore";
 import { PageHeader } from "@/app/components/shell/PageHeader";
-import type { TreatmentPlanV2Status, MedicineEntry, MedicineCategoryId } from "@/lib/types/treatmentV2";
+import type { TreatmentPlanV2Status, MedicineEntry, MedicineCategoryId, TherapyScheduleShare, MedicineCategory } from "@/lib/types/treatmentV2";
 import protocolSections from "@/data/treatment-protocol-sections.json";
 import medicineCats     from "@/data/treatment-medicine-categories.json";
 import scheduleTargets  from "@/data/treatment-schedule-targets.json";
@@ -65,8 +65,8 @@ export function TreatmentPlanDetailPage() {
   const [protocol,       setProtocol]       = useState<Record<string, string>>(plan?.protocol ?? {});
   const [status,         setStatus]         = useState<TreatmentPlanV2Status>(plan?.status ?? "draft");
   const [vaidyaName,     setVaidyaName]     = useState(plan?.treatingVaidyaName ?? "");
-  const [scheduleShares, setScheduleShares] = useState(plan?.scheduleShares ?? scheduleTargets.targets.map((t) => ({ target: t.id as any, shared: false })));
-  const [medicineCategories, setMedicineCategories] = useState(plan?.medicineCategories ?? medicineCats.categories.map((c) => ({
+  const [scheduleShares, setScheduleShares] = useState<TherapyScheduleShare[]>(plan?.scheduleShares ?? scheduleTargets.targets.map((t) => ({ target: t.id as any, shared: false })));
+  const [medicineCategories, setMedicineCategories] = useState<MedicineCategory[]>(plan?.medicineCategories ?? medicineCats.categories.map((c) => ({
     categoryId: c.id as MedicineCategoryId,
     medicines: [] as MedicineEntry[],
     pharmacyForwarded: false, pharmacyForwardedAt: undefined,
