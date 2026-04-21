@@ -143,7 +143,7 @@ export function DashboardPage() {
         </div>
         <div className="space-y-2">
           {patients.slice(0, 6).map((p) => {
-            const wf = p.currentWorkflowStage;
+            const wf = p.currentStage;
             return (
               <Link key={p.id} href={`/patients/${p.id}`}
                 className="flex items-center gap-3 rounded-lg border border-slate-200 bg-white px-4 py-2.5 hover:bg-slate-50 transition-colors">
